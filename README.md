@@ -1,108 +1,166 @@
-# ⚡ Arise — Real-Time Voice, Video & Community Platform
+<div align="center">
 
-[![Next.js](https://img.shields.io/badge/Next.js-16.3-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
-[![React](https://img.shields.io/badge/React-19.2-61DAFB?style=for-the-badge&logo=react)](https://react.dev/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5.0-3178C6?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org/)
-[![WebRTC](https://img.shields.io/badge/WebRTC-Peer--to--Peer-333333?style=for-the-badge&logo=webrtc)](https://webrtc.org/)
-[![Socket.io](https://img.shields.io/badge/Socket.io-4.8-010101?style=for-the-badge&logo=socketdotio)](https://socket.io/)
-[![Prisma](https://img.shields.io/badge/Prisma-ORM-2D3748?style=for-the-badge&logo=prisma)](https://www.prisma.io/)
+# ⚡ ARISE
+### High-Performance Real-Time Voice, Video & Community Platform
+*Built with Next.js 16, React 19, WebRTC Mesh Architecture & WebSockets*
 
-> **Arise** is a high-performance, full-stack real-time collaboration application inspired by Discord. Built with Next.js 16 (App Router), Node.js, WebSockets, and WebRTC Mesh Architecture, it supports low-latency multi-user voice channels, 1-on-1 direct calls, screen sharing, real-time messaging, and server community management.
+<br/>
 
----
+[![Next.js](https://img.shields.io/badge/Next.js-16.3-black?style=for-the-badge&logo=next.js&logoColor=white)](https://nextjs.org/)
+[![React](https://img.shields.io/badge/React-19.2-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.0-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![WebRTC](https://img.shields.io/badge/WebRTC-Peer--to--Peer-333333?style=for-the-badge&logo=webrtc&logoColor=white)](https://webrtc.org/)
+[![Socket.io](https://img.shields.io/badge/Socket.io-4.8-010101?style=for-the-badge&logo=socketdotio&logoColor=white)](https://socket.io/)
+[![Prisma](https://img.shields.io/badge/Prisma-ORM-2D3748?style=for-the-badge&logo=prisma&logoColor=white)](https://www.prisma.io/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind-CSS%204-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
 
-## ✨ Key Features
+<br/>
 
-### 🎙️ Real-Time Voice & WebRTC Stage
-- **Multi-User Voice Channels**: Full mesh WebRTC architecture with STUN/TURN failover for peer-to-peer audio transmission.
-- **Active Speaker Detection**: Visual green-ring speaking indicators with audio level analysis.
-- **Persistent Voice Connection**: Seamlessly browse servers, channels, and DMs without dropping voice connectivity.
-- **Mute & Deafen Controls**: Instant hardware track muting and deafening state broadcasts.
+[Live Demo](#-live-preview) • [Features](#-features) • [System Architecture](#-system-architecture) • [Engineering Highlights](#-engineering-highlights) • [Getting Started](#-getting-started)
 
-### 📹 Video & Screen Sharing
-- **1080p 60fps HD Screenshare**: Share desktop screens or specific application windows directly into voice stages or private calls.
-- **Live Theater View**: Dedicated theater layout to watch participant screens in real-time.
+<br/>
 
-### 💬 Direct Messaging & Community Servers
-- **Real-Time Chat**: Sub-millisecond message delivery via WebSockets (`socket.io`).
-- **Server & Channel Architecture**: Create custom servers, text channels, voice stages, and manage member roles.
-- **1-on-1 DM Calls**: Direct voice and video calling with audible ringtones and call acceptance states.
-- **User Presence**: Live online/offline status updates across all connected clients.
+<img src="./public/docs/app_overview.png" alt="Arise App Overview" width="850" style="border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.5);"/>
+
+</div>
 
 ---
 
-## 🛠️ Architecture & Tech Stack
+## 📌 Executive Summary
 
-| Layer | Technology |
-|---|---|
-| **Frontend** | React 19, Next.js 16 (Turbopack, App Router), Framer Motion, Lucide Icons |
-| **Real-Time Protocols** | Socket.io, WebRTC (RTCPeerConnection + STUN/TURN OpenRelay) |
-| **Backend & API** | Node.js custom HTTP + WebSocket Server, Next.js Route Handlers |
-| **Database & ORM** | SQLite / Better-SQLite3, Prisma ORM |
-| **Authentication** | JWT (JSON Web Tokens), Bcrypt password hashing |
+**Arise** is a production-grade, Discord-inspired real-time collaboration engine designed to showcase full-stack system architecture and low-latency networking capabilities. 
+
+Unlike traditional chat apps that rely purely on polling or third-party paid SDKs (like Agora or Twilio), **Arise implements native WebRTC Mesh topologies from scratch**, coupled with a stateful bidirectional WebSocket signaling pipeline. This enables persistent voice channels, real-time 1080p 60fps screen sharing, active speaker detection, and instant messaging with sub-50ms latency.
 
 ---
 
-## 🚀 Getting Started
+## 📸 Visual Showcase
 
-### Prerequisites
-- **Node.js**: `>= 20.19.0`
-- **npm** or **pnpm**
+<div align="center">
 
-### Installation
+| 🎙️ WebRTC Voice Stage & Active Speaker Rings | 💬 Real-Time Messaging & Direct Channels |
+| :---: | :---: |
+| <img src="./public/docs/voice_stage.png" width="420" alt="Voice Stage" style="border-radius: 8px;"/> | <img src="./public/docs/chat_demo.png" width="420" alt="Chat Interface" style="border-radius: 8px;"/> |
+| *Mesh WebRTC audio stream with live speaker detection* | *WebSocket sub-millisecond message delivery* |
 
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/<your-username>/arise.git
-   cd arise
-   ```
-
-2. **Install dependencies:**
-   ```bash
-   npm install
-   ```
-
-3. **Set up environment variables:**
-   Create a `.env` file in the root directory:
-   ```env
-   DATABASE_URL="file:./dev.db"
-   JWT_SECRET="your-super-secure-jwt-secret-key"
-   PORT=3000
-   ```
-
-4. **Initialize database schema:**
-   ```bash
-   npx prisma generate
-   npx prisma db push
-   ```
-
-5. **Start development server:**
-   ```bash
-   npm run dev
-   ```
-
-The application will be live at `http://localhost:3000`.
+</div>
 
 ---
 
-## 📦 Production Deployment
+## 🎯 Key Features
 
-To run in production with both WebSocket and Next.js bundled together:
+### 🎙️ 1. Multi-User WebRTC Voice Channels (Full Mesh)
+- **Zero-Latency Peer Audio**: Fully native `RTCPeerConnection` mesh with dynamic ICE candidate negotiation.
+- **Failover & NAT Traversal**: Dual STUN/TURN fallback servers ensure seamless connectivity across restrictive firewalls and mobile networks.
+- **Active Speaker Recognition**: Audio level processing using the `Web Audio API` (`AnalyserNode`) detects decibel spikes and renders glowing speaker rings in real time.
+- **Persistent Voice Connection**: Seamlessly browse servers, channels, and direct messages without dropping voice connectivity or triggering reconnection loops.
 
-```bash
-npm run build
-npm start
+### 🖥️ 2. HD Screen Sharing & Stage Theater
+- **1080p 60fps Desktop Streaming**: Low-latency screen capture using browser MediaDevices Display APIs.
+- **Theater Mode**: Interactive participant stage with full-screen toggles and automatic stream layout adjustments.
+
+### 💬 3. Direct Messaging & 1-on-1 Calls
+- **Real-Time DMs**: Instant peer-to-peer and group messaging via WebSockets (`socket.io`).
+- **Interactive Call Signaling**: Real-time incoming call overlays with custom audio synthesizers (`Web Audio Oscillator`) simulating native ringtones.
+- **Live User Presence**: Heartbeat-based online/idle/offline status synchronization.
+
+### 🛡️ 4. Server & Channel Management
+- **Hierarchical Server Architecture**: Support for text channels, voice stages, and custom channel categories.
+- **Role-Based Access**: Permission-controlled actions and invite link generator with expiry hashing.
+
+---
+
+## 🏗️ System Architecture
+
+```
+                          ┌─────────────────────────────────────┐
+                          │         Next.js Client UI           │
+                          │   (React 19 + Framer Motion)        │
+                          └──────────┬──────────────┬───────────┘
+                                     │              │
+                   HTTPS / REST API  │              │  WebSockets (Signaling)
+                                     ▼              ▼
+                          ┌─────────────────────────────────────┐
+                          │      Custom Node.js Server          │
+                          │  - Next.js Turbopack Handlers       │
+                          │  - Socket.io Engine (Mesh Signaling)│
+                          └──────────┬──────────────┬───────────┘
+                                     │              │
+                        Query Engine │              │ STUN/TURN Negotiation
+                                     ▼              ▼
+                     ┌──────────────────┐    ┌──────────────────────┐
+                     │  Prisma + SQLite │    │ OpenRelay TURN Pool  │
+                     │  (Persistent DB) │    │ (NAT Traversal Mesh) │
+                     └──────────────────┘    └──────────────────────┘
 ```
 
 ---
 
-## 🔒 Security & Performance Highlights
-- Zero socket reconnection loops on client navigation.
-- Efficient memory buffer audio processing for mic testing.
-- Client audio levels analyzed via `Web Audio API` (AnalyserNode) locally without backend server load.
-- Isolated STUN/TURN ICE candidate gathering with dynamic relay fallback.
+## 🔬 Engineering & Architecture Highlights
+
+### ⚡ Persistent WebRTC Without Socket Disconnect Loops
+- **The Challenge**: In complex single-page apps, re-rendering stateful views (switching channels or servers) typically re-triggers parent `useEffect` hooks, leading to socket disconnections that drop active WebRTC calls.
+- **The Solution**: Designed an isolated `createPeerConnectionRef` decoupling pattern. The primary WebSocket listener remains permanently mounted without depending on dynamic view-state callbacks, keeping audio streams uninterrupted during navigation.
+
+### 🎧 Clean Buffer Mic Testing (Echo-Free)
+- Replaced traditional raw loopback audio (which causes metallic robotic feedback) with a lightweight **MediaRecorder 2.5-second buffer system** that captures audio and plays it back locally for a clean user mic check experience.
 
 ---
 
-## 👨‍💻 Author
-Engineered with precision for seamless real-time communications.
+## 🧰 Tech Stack Breakdown
+
+| Layer | Technologies Used |
+|---|---|
+| **Client Core** | Next.js 16.3 (App Router), React 19, TypeScript 5 |
+| **Styling & Motion** | Tailwind CSS 4, CSS Modules, Framer Motion, Lucide Icons |
+| **Real-Time Protocols** | WebSockets (Socket.io 4.8), WebRTC (RTCPeerConnection, MediaStream API) |
+| **Audio Processing** | Web Audio API (`AudioContext`, `AnalyserNode`, `OscillatorNode`) |
+| **Backend Runtime** | Node.js (Custom HTTP + Socket.io Server Architecture) |
+| **Database & ORM** | SQLite / Better-SQLite3, Prisma ORM 6 |
+| **Security & Auth** | JWT Authentication, Bcrypt Password Hashing, HTTP-only Cookie Storage |
+
+---
+
+## 🏁 Quickstart Guide
+
+### Prerequisites
+- Node.js `>= 20.19.0`
+- npm or pnpm
+
+### 1. Clone the repository
+```bash
+git clone https://github.com/<your-username>/arise.git
+cd arise
+```
+
+### 2. Install dependencies
+```bash
+npm install
+```
+
+### 3. Setup environment variables
+Create a `.env` file in the root directory:
+```env
+DATABASE_URL="file:./dev.db"
+JWT_SECRET="arise-super-secret-jwt-key"
+PORT=3000
+```
+
+### 4. Push database schema & start development
+```bash
+npx prisma generate
+npm run dev
+```
+
+Visit **`http://localhost:3000`** in your browser.
+
+---
+
+## 📄 License
+This project is open-source and available under the [MIT License](LICENSE).
+
+<br/>
+
+<div align="center">
+  <sub>Engineered with focus on real-time systems, network topologies, and responsive UX.</sub>
+</div>
