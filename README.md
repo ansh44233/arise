@@ -156,8 +156,15 @@ Visit **`http://localhost:3000`** in your browser.
 
 ---
 
+## 👨‍💻 Author & Rights
+**ansh44233**
+- GitHub: [@ansh44233](https://github.com/ansh44233)
+- Project Repository: [https://github.com/ansh44233/arise](https://github.com/ansh44233/arise)
+
+---
+
 ## 📄 License
-This project is open-source and available under the [MIT License](LICENSE).
+This project is open-source and licensed under the [MIT License](LICENSE) © 2026 **ansh44233**. All rights reserved.
 
 <br/>
 

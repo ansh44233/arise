@@ -1,7 +1,9 @@
 {
   "name": "arise",
-  "version": "0.1.0",
-  "private": true,
+  "version": "1.0.0",
+  "description": "Real-time Voice, Video & Community Platform built with Next.js, WebSockets and WebRTC Mesh",
+  "author": "ansh44233",
+  "license": "MIT",
   "engines": {
     "node": ">=20.19.0"
   },
