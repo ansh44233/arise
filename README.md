@@ -129,7 +129,7 @@ Unlike traditional chat apps that rely purely on polling or third-party paid SDK
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/<your-username>/arise.git
+git clone https://github.com/ansh44233/arise.git
 cd arise
 ```
 
