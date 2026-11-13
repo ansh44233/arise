@@ -1,0 +1,43 @@
+{
+  "name": "arise",
+  "version": "0.1.0",
+  "private": true,
+  "engines": {
+    "node": ">=20.19.0"
+  },
+  "scripts": {
+    "dev": "node server.js",
+    "build": "prisma generate && next build",
+    "start": "NODE_ENV=production node server.js",
+    "lint": "eslint",
+    "postinstall": "prisma generate"
+  },
+  "dependencies": {
+    "@prisma/adapter-better-sqlite3": "^6.4.0",
+    "@prisma/client": "^6.4.0",
+    "bcryptjs": "^3.0.3",
+    "better-sqlite3": "^11.8.0",
+    "framer-motion": "^13.0.0",
+    "jsonwebtoken": "^9.0.3",
+    "lucide-react": "^1.30.0",
+    "next": "16.3.0",
+    "react": "19.2.8",
+    "react-dom": "19.2.8",
+    "socket.io": "^4.8.3",
+    "socket.io-client": "^4.8.3"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/bcryptjs": "^2.4.6",
+    "@types/better-sqlite3": "^9.6.0",
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.3.0",
+    "prisma": "^6.4.0",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}

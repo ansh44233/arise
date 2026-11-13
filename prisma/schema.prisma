@@ -1,0 +1,182 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id           String   @id @default(uuid())
+  email        String   @unique
+  username     String   @unique
+  password     String
+  avatarUrl    String?
+  bannerUrl    String?
+  about        String?
+  badges       String?  @default("EARLY_SUPPORTER") // Comma-separated badge IDs: EARLY_SUPPORTER, NITRO, ACTIVE_DEV, STAFF, HYPESQUAD, OWNER
+  customStatus String?
+  pronouns     String?
+  accentColor  String?  @default("#6366f1")
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  servers           Server[]       @relation("OwnerServers")
+  serverMemberships ServerMember[]
+  messages          Message[]
+
+  // Friendships
+  sentFriendRequests     Friendship[] @relation("SentRequests")
+  receivedFriendRequests Friendship[] @relation("ReceivedRequests")
+
+  // Direct conversations
+  conversationsInitiated DirectConversation[] @relation("UserOne")
+  conversationsReceived  DirectConversation[] @relation("UserTwo")
+  directMessages         DirectMessage[]
+
+  // Groups
+  ownedGroups   GroupChat[]    @relation("GroupOwner")
+  groupMembers  GroupMember[]
+  groupMessages GroupMessage[]
+}
+
+model Friendship {
+  id         String   @id @default(uuid())
+  senderId   String
+  receiverId String
+  status     String   @default("PENDING") // PENDING, ACCEPTED, REJECTED
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+
+  sender   User @relation("SentRequests", fields: [senderId], references: [id], onDelete: Cascade)
+  receiver User @relation("ReceivedRequests", fields: [receiverId], references: [id], onDelete: Cascade)
+
+  @@unique([senderId, receiverId])
+}
+
+model DirectConversation {
+  id        String   @id @default(uuid())
+  userOneId String
+  userTwoId String
+  createdAt DateTime @default(now())
+
+  userOne User @relation("UserOne", fields: [userOneId], references: [id], onDelete: Cascade)
+  userTwo User @relation("UserTwo", fields: [userTwoId], references: [id], onDelete: Cascade)
+
+  messages DirectMessage[]
+
+  @@unique([userOneId, userTwoId])
+}
+
+model DirectMessage {
+  id             String   @id @default(uuid())
+  content        String
+  senderId       String
+  conversationId String
+  createdAt      DateTime @default(now())
+
+  sender       User               @relation(fields: [senderId], references: [id], onDelete: Cascade)
+  conversation DirectConversation @relation(fields: [conversationId], references: [id], onDelete: Cascade)
+}
+
+model GroupChat {
+  id        String   @id @default(uuid())
+  name      String
+  ownerId   String
+  createdAt DateTime @default(now())
+
+  owner    User           @relation("GroupOwner", fields: [ownerId], references: [id], onDelete: Cascade)
+  members  GroupMember[]
+  messages GroupMessage[]
+}
+
+model GroupMember {
+  id       String   @id @default(uuid())
+  groupId  String
+  userId   String
+  joinedAt DateTime @default(now())
+
+  group GroupChat @relation(fields: [groupId], references: [id], onDelete: Cascade)
+  user  User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([groupId, userId])
+}
+
+model GroupMessage {
+  id        String   @id @default(uuid())
+  content   String
+  senderId  String
+  groupId   String
+  createdAt DateTime @default(now())
+
+  sender User      @relation(fields: [senderId], references: [id], onDelete: Cascade)
+  group  GroupChat @relation(fields: [groupId], references: [id], onDelete: Cascade)
+}
+
+model Server {
+  id         String   @id @default(uuid())
+  name       String
+  imageUrl   String?
+  inviteCode String?  @unique
+  ownerId    String
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+
+  owner    User           @relation("OwnerServers", fields: [ownerId], references: [id])
+  channels Channel[]
+  members  ServerMember[]
+  roles    ServerRole[]
+}
+
+model ServerMember {
+  id       String   @id @default(uuid())
+  serverId String
+  userId   String
+  roleId   String?
+  joinedAt DateTime @default(now())
+
+  server Server      @relation(fields: [serverId], references: [id], onDelete: Cascade)
+  user   User        @relation(fields: [userId], references: [id], onDelete: Cascade)
+  role   ServerRole? @relation(fields: [roleId], references: [id], onDelete: SetNull)
+
+  @@unique([serverId, userId])
+}
+
+model ServerRole {
+  id          String   @id @default(uuid())
+  name        String
+  color       String   @default("#99aab5")
+  permissions String   @default("SEND_MESSAGES,CONNECT_VOICE") // Comma-separated perms: ADMIN, MANAGE_CHANNELS, MANAGE_MESSAGES, SEND_MESSAGES, CONNECT_VOICE
+  serverId    String
+  createdAt   DateTime @default(now())
+
+  server  Server         @relation(fields: [serverId], references: [id], onDelete: Cascade)
+  members ServerMember[]
+}
+
+model Channel {
+  id        String   @id @default(uuid())
+  name      String
+  type      String   @default("TEXT") // TEXT, VOICE
+  serverId  String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  server   Server    @relation(fields: [serverId], references: [id], onDelete: Cascade)
+  messages Message[]
+}
+
+model Message {
+  id        String   @id @default(uuid())
+  content   String
+  fileUrl   String?
+  userId    String
+  channelId String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  user    User    @relation(fields: [userId], references: [id], onDelete: Cascade)
+  channel Channel @relation(fields: [channelId], references: [id], onDelete: Cascade)
+}
+
