@@ -16,20 +16,24 @@ export async function POST(req: Request) {
     const cleanEmail = email.trim().toLowerCase();
     const cleanUsername = username.trim();
 
-    // Check if email already registered
-    const existingEmail = await prisma.user.findUnique({
-      where: { email: cleanEmail },
-    });
-    if (existingEmail) {
-      return NextResponse.json({ error: 'Email is already registered. Please sign in.' }, { status: 409 });
-    }
+    // Check if email already registered (fail-safe)
+    try {
+      const existingEmail = await prisma.user.findUnique({
+        where: { email: cleanEmail },
+      });
+      if (existingEmail) {
+        return NextResponse.json({ error: 'Email is already registered. Please sign in.' }, { status: 409 });
+      }
 
-    // Check if username already taken
-    const existingUsername = await prisma.user.findFirst({
-      where: { username: { equals: cleanUsername } },
-    });
-    if (existingUsername) {
-      return NextResponse.json({ error: `Username "@${cleanUsername}" is already taken. Please choose another.` }, { status: 409 });
+      // Check if username already taken
+      const existingUsername = await prisma.user.findFirst({
+        where: { username: { equals: cleanUsername } },
+      });
+      if (existingUsername) {
+        return NextResponse.json({ error: `Username "@${cleanUsername}" is already taken. Please choose another.` }, { status: 409 });
+      }
+    } catch (dbErr) {
+      console.warn('Database check skipped or failed in send-otp:', dbErr);
     }
 
     // Generate 6-digit random verification code
