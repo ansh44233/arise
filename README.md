@@ -169,5 +169,5 @@ This project is open-source and licensed under the [MIT License](LICENSE) © 202
 <br/>
 
 <div align="center">
-  <sub>Engineered with focus on real-time systems, network topologies, and responsive UX.</sub>
+  <sub>Engineered with focus on real-time systems, network topologies, and responsive UX...</sub>
 </div>
