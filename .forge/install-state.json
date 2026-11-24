@@ -1,0 +1,2547 @@
+{
+  "schemaVersion": 1,
+  "forgeVersion": "4.0.0",
+  "installedAt": "2026-11-24T06:54:52.248Z",
+  "profile": "standard",
+  "targets": [
+    "claude",
+    "cursor",
+    "codex"
+  ],
+  "languages": [
+    "react",
+    "typescript"
+  ],
+  "files": [
+    {
+      "path": ".agents/skills/forge-agent-workflow-design/SKILL.md",
+      "sha256": "0085abf0c6f2965544a1ad3d5c92d687aef5bfcd6aab733d8fff924a8c19b73b",
+      "targets": [
+        "codex"
+      ],
+      "item": "skill:agent-workflow-design"
+    },
+    {
+      "path": ".agents/skills/forge-api-design/SKILL.md",
+      "sha256": "807fe98138e0730f221a00ba3fc6525148d45b9b6f40356a13efe57250430b57",
+      "targets": [
+        "codex"
+      ],
+      "item": "skill:api-design"
+    },
+    {
+      "path": ".agents/skills/forge-architecture-decision-records/SKILL.md",
+      "sha256": "ed206a34942ccc64b3e77e97643a5fbd1f752c84a3c503fe1d9da5dbbc3b62dc",
+      "targets": [
+        "codex"
+      ],
+      "item": "skill:architecture-decision-records"
+    },
+    {
+      "path": ".agents/skills/forge-auth-and-sessions/SKILL.md",
+      "sha256": "cdce0788e640fcb18d761e92a16811454b71ed3274cfd1937e76e4a3b4f79a3d",
+      "targets": [
+        "codex"
+      ],
+      "item": "skill:auth-and-sessions"
+    },
+    {
+      "path": ".agents/skills/forge-background-jobs/SKILL.md",
+      "sha256": "02aac28ebe7b6244f2f7f45bae55e6863d0111497d04bdacb295708a4ce500da",
+      "targets": [
+        "codex"
+      ],
+      "item": "skill:background-jobs"
+    },
+    {
+      "path": ".agents/skills/forge-caching-strategies/SKILL.md",
+      "sha256": "22468ac7a20a55bd36071789db2435f26f5ec0512e6111e2b324cac3dee7ce85",
+      "targets": [
+        "codex"
+      ],
+      "item": "skill:caching-strategies"
+    },
+    {
+      "path": ".agents/skills/forge-code-review-checklist/SKILL.md",
+      "sha256": "89609c02fb546f94f98bb2143d42c41610e5024e5a2d4bdb57495ac80e3d642f",
+      "targets": [
+        "codex"
+      ],
+      "item": "skill:code-review-checklist"
+    },
+    {
+      "path": ".agents/skills/forge-codebase-onboarding/SKILL.md",
+      "sha256": "27f429278135db5b0fab831306dae78a83c100a3baf81fb389f2ae0fd7c5b1d1",
+      "targets": [
+        "codex"
+      ],
+      "item": "skill:codebase-onboarding"
+    },
+    {
+      "path": ".agents/skills/forge-context-budget/SKILL.md",
+      "sha256": "82a4994bc328003d0c4c62b662b961d57df1fa60be5d7b0cd3886784d5a7438f",
+      "targets": [
+        "codex"
+      ],
+      "item": "skill:context-budget"
+    },
+    {
+      "path": ".agents/skills/forge-continuous-learning/SKILL.md",
+      "sha256": "bad037e662a8a0306a7caf2e0e25ad79d16adba8cb1e5080de80e0a159ba93e3",
+      "targets": [
+        "codex"
+      ],
+      "item": "skill:continuous-learning"
+    },
+    {
+      "path": ".agents/skills/forge-debugging/SKILL.md",
+      "sha256": "3916f0674645e5b6dae810b98979b96252586d8b126f91c9f101a76c20ec7fcd",
+      "targets": [
+        "codex"
+      ],
+      "item": "skill:debugging"
+    },
+    {
+      "path": ".agents/skills/forge-dependency-upgrades/SKILL.md",
+      "sha256": "1ee5fcc5ac585f762da4dd8625ab6850e3202279734ef936c752d89b82056293",
+      "targets": [
+        "codex"
+      ],
+      "item": "skill:dependency-upgrades"
+    },
+    {
+      "path": ".agents/skills/forge-error-handling/SKILL.md",
+      "sha256": "2c6134f41837b28ed24de88a07d02eda4ab3192f817eb95f193f98d72f375ab1",
+      "targets": [
+        "codex"
+      ],
+      "item": "skill:error-handling"
+    },
+    {
+      "path": ".agents/skills/forge-feature-flag-rollouts/SKILL.md",
+      "sha256": "ac6283f46acd94e109ed96a2fd65a8c8646c403a09224a883fc8a9dd2d85ec4d",
+      "targets": [
+        "codex"
+      ],
+      "item": "skill:feature-flag-rollouts"
+    },
+    {
+      "path": ".agents/skills/forge-flaky-tests/SKILL.md",
+      "sha256": "041d7d5cb3e30e15353bdf7fafddf748fd4f62e1807ccb096c4c4880aa845fc7",
+      "targets": [
+        "codex"
+      ],
+      "item": "skill:flaky-tests"
+    },
+    {
+      "path": ".agents/skills/forge-git-workflow/SKILL.md",
+      "sha256": "cf50158410e1af8e16bce0883e7732b66748aecd2f2b22186d217b5bb41f3cb0",
+      "targets": [
+        "codex"
+      ],
+      "item": "skill:git-workflow"
+    },
+    {
+      "path": ".agents/skills/forge-git-worktrees/SKILL.md",
+      "sha256": "e62a0471a8154bbbee708e3063774cab5be6a980e295836832e77c97fedbb768",
+      "targets": [
+        "codex"
+      ],
+      "item": "skill:git-worktrees"
+    },
+    {
+      "path": ".agents/skills/forge-github-actions-hardening/SKILL.md",
+      "sha256": "6b40a4daea450f0563ba9904bf1f7c2a4446e6df27de6e0410c0ecd43450d658",
+      "targets": [
+        "codex"
+      ],
+      "item": "skill:github-actions-hardening"
+    },
+    {
+      "path": ".agents/skills/forge-graphql-apis/SKILL.md",
+      "sha256": "3e33c66fbc387473de1f3f012e56a647735fdc1709326402819a97c4c96befdf",
+      "targets": [
+        "codex"
+      ],
+      "item": "skill:graphql-apis"
+    },
+    {
+      "path": ".agents/skills/forge-implementation-planning/SKILL.md",
+      "sha256": "1ab5602b2b42c79d291e43e89c93a365f64884cb5fd58931e0e738d9077d4ec9",
+      "targets": [
+        "codex"
+      ],
+      "item": "skill:implementation-planning"
+    },
+    {
+      "path": ".agents/skills/forge-kubernetes-deploys/SKILL.md",
+      "sha256": "8382f15ecb7e398fcd083af73ef0dc001de4d482fe32dbcdd7c723815f7479ed",
+      "targets": [
+        "codex"
+      ],
+      "item": "skill:kubernetes-deploys"
+    },
+    {
+      "path": ".agents/skills/forge-llm-app-engineering/SKILL.md",
+      "sha256": "d788604d39edd754c1703a6d94a88db5e77ae6aa774e6551fd81ddac13182717",
+      "targets": [
+        "codex"
+      ],
+      "item": "skill:llm-app-engineering"
+    },
+    {
+      "path": ".agents/skills/forge-llm-evals/SKILL.md",
+      "sha256": "0f462a619d74ebe2d0e8de5db64abfd0448167ee39f73be1524998bfdc5954aa",
+      "targets": [
+        "codex"
+      ],
+      "item": "skill:llm-evals"
+    },
+    {
+      "path": ".agents/skills/forge-mcp-server-development/SKILL.md",
+      "sha256": "8863d80a1ca378eee0fff1c4df7b01aba33f1b7d3c0d0caf6771e2ba0d884cbd",
+      "targets": [
+        "codex"
+      ],
+      "item": "skill:mcp-server-development"
+    },
+    {
+      "path": ".agents/skills/forge-nextjs-app-router/SKILL.md",
+      "sha256": "35e7a1efdd2724ff6c47b00f00767be08a9e78c6d4efdf0f6e2ff93984f8fc49",
+      "targets": [
+        "codex"
+      ],
+      "item": "skill:nextjs-app-router"
+    },
+    {
+      "path": ".agents/skills/forge-node-api-services/SKILL.md",
+      "sha256": "0a814aee8ab96fc8e924860272d1a0d33eebef31eb003a5764a3ae9bf62726a4",
+      "targets": [
+        "codex"
+      ],
+      "item": "skill:node-api-services"
+    },
+    {
+      "path": ".agents/skills/forge-payments-integration/SKILL.md",
+      "sha256": "9c87256788c9240acab0f67642a9f25401541a9c63fad2e8ee3aae5443ef3b6a",
+      "targets": [
+        "codex"
+      ],
+      "item": "skill:payments-integration"
+    },
+    {
+      "path": ".agents/skills/forge-postgres-queries/SKILL.md",
+      "sha256": "4a90840a165f273f907ac85d34fb65260f85c95c566aec99839ebbe3354035d3",
+      "targets": [
+        "codex"
+      ],
+      "item": "skill:postgres-queries"
+    },
+    {
+      "path": ".agents/skills/forge-prompt-injection-defense/SKILL.md",
+      "sha256": "4b2fe9717c4ae10d303511c085ba83b1f2ca059bf6664b0ac0852fe05cb240f1",
+      "targets": [
+        "codex"
+      ],
+      "item": "skill:prompt-injection-defense"
+    },
+    {
+      "path": ".agents/skills/forge-rag-pipelines/SKILL.md",
+      "sha256": "fc8865d0b98f5796db54c281220e96ae0a96a8a6ada81838d4e7ecb285ac0459",
+      "targets": [
+        "codex"
+      ],
+      "item": "skill:rag-pipelines"
+    },
+    {
+      "path": ".agents/skills/forge-react-components/SKILL.md",
+      "sha256": "f34de632207e747cc50875e554e8c8ecae0ed073bd9c8b37c753c3a8f33801d3",
+      "targets": [
+        "codex"
+      ],
+      "item": "skill:react-components"
+    },
+    {
+      "path": ".agents/skills/forge-redis-patterns/SKILL.md",
+      "sha256": "deb7ce03a635369cb8b6516b4bb159ba83d8f36bcd2bf7a298962453c0368ff7",
+      "targets": [
+        "codex"
+      ],
+      "item": "skill:redis-patterns"
+    },
+    {
+      "path": ".agents/skills/forge-refactoring-patterns/SKILL.md",
+      "sha256": "445cdf12bb904d6b22d0fe7889115f49b6f52f3f982f279060850875bf2d4658",
+      "targets": [
+        "codex"
+      ],
+      "item": "skill:refactoring-patterns"
+    },
+    {
+      "path": ".agents/skills/forge-research-first/SKILL.md",
+      "sha256": "df3b7129afc81aaf69f54bd7286cb601913b93cbde7b41a682408ab8464c00de",
+      "targets": [
+        "codex"
+      ],
+      "item": "skill:research-first"
+    },
+    {
+      "path": ".agents/skills/forge-secrets-management/SKILL.md",
+      "sha256": "d42fd3ceb095fbad13b4bfe60d88135b5188ad5369b292e37be1661aea88953b",
+      "targets": [
+        "codex"
+      ],
+      "item": "skill:secrets-management"
+    },
+    {
+      "path": ".agents/skills/forge-secure-changes/SKILL.md",
+      "sha256": "b15c315957b98d248a54229b17e0bcc51074ca1881d65d1a422d6223ce75e5ef",
+      "targets": [
+        "codex"
+      ],
+      "item": "skill:secure-changes"
+    },
+    {
+      "path": ".agents/skills/forge-security-review/SKILL.md",
+      "sha256": "a194084989dc68747c76fe6e66334debf067daa33f4a34a139dae2c6b07214bd",
+      "targets": [
+        "codex"
+      ],
+      "item": "skill:security-review"
+    },
+    {
+      "path": ".agents/skills/forge-spec-driven-development/SKILL.md",
+      "sha256": "828d1a816e1a45e5347d379b8347d04bedf1c8e8b96aa494e59fa77a4f831cf0",
+      "targets": [
+        "codex"
+      ],
+      "item": "skill:spec-driven-development"
+    },
+    {
+      "path": ".agents/skills/forge-strategic-compaction/SKILL.md",
+      "sha256": "529e34784ddf1468ab0f478aa5e8fff2c0e388e50d537e765a1566658b6a2b2a",
+      "targets": [
+        "codex"
+      ],
+      "item": "skill:strategic-compaction"
+    },
+    {
+      "path": ".agents/skills/forge-supply-chain-security/SKILL.md",
+      "sha256": "23a6503c56607187cde288988dad7b0212fd18b7018a2612f05f13bcc644c339",
+      "targets": [
+        "codex"
+      ],
+      "item": "skill:supply-chain-security"
+    },
+    {
+      "path": ".agents/skills/forge-tdd-workflow/SKILL.md",
+      "sha256": "fd562368a41245f914e7bcf38c13c84c7c562dfb0cb02f94a0184fc1da9ba89f",
+      "targets": [
+        "codex"
+      ],
+      "item": "skill:tdd-workflow"
+    },
+    {
+      "path": ".agents/skills/forge-terraform-changes/SKILL.md",
+      "sha256": "1b7c6b0213acdcf0d7c5e60bd9c619227d7ef797e36dfdfa9f04f61e23e290a1",
+      "targets": [
+        "codex"
+      ],
+      "item": "skill:terraform-changes"
+    },
+    {
+      "path": ".agents/skills/forge-typescript-strict/SKILL.md",
+      "sha256": "c5b0213c22700abebdab019f3d44cb45bb91fa32216a6e28dc44463761832ec2",
+      "targets": [
+        "codex"
+      ],
+      "item": "skill:typescript-strict"
+    },
+    {
+      "path": ".agents/skills/forge-verification-loop/SKILL.md",
+      "sha256": "289a6ac13d90698bfb7dc08d4b77d53f49da8b91084537e105b993a8d5abd70d",
+      "targets": [
+        "codex"
+      ],
+      "item": "skill:verification-loop"
+    },
+    {
+      "path": ".agents/skills/forge-web-performance/SKILL.md",
+      "sha256": "5bbc4cfee0b0be4b70037d7aab9679a24dfee9ca059bc26e08a436565dfa6f95",
+      "targets": [
+        "codex"
+      ],
+      "item": "skill:web-performance"
+    },
+    {
+      "path": ".claude/agents/forge-api-designer.md",
+      "sha256": "99287dda08d8da37791151076864a5b0520af0a877920e7a23697bf4de36e83b",
+      "targets": [
+        "claude"
+      ],
+      "item": "agent:api-designer"
+    },
+    {
+      "path": ".claude/agents/forge-architect.md",
+      "sha256": "943eeefde44fb32933507a17c2113b0e1beb58ea89d2dd5a488d8b5329f7e65a",
+      "targets": [
+        "claude"
+      ],
+      "item": "agent:architect"
+    },
+    {
+      "path": ".claude/agents/forge-build-error-resolver.md",
+      "sha256": "3ce6be7edac584ded6df0fefe9d6a0c2e88259013d85636b896c2d89c3f21c94",
+      "targets": [
+        "claude"
+      ],
+      "item": "agent:build-error-resolver"
+    },
+    {
+      "path": ".claude/agents/forge-ci-security-reviewer.md",
+      "sha256": "67bf3a2983898dfad7e6ed248d196a705263190132f9354c4a0ad4b9026a9a63",
+      "targets": [
+        "claude"
+      ],
+      "item": "agent:ci-security-reviewer"
+    },
+    {
+      "path": ".claude/agents/forge-code-reviewer.md",
+      "sha256": "3bab25df937fc08546c8500b9c037cdda7403c8c5ef9d97219b2c6260d8ed593",
+      "targets": [
+        "claude"
+      ],
+      "item": "agent:code-reviewer"
+    },
+    {
+      "path": ".claude/agents/forge-context-optimizer.md",
+      "sha256": "3cf8efd4071e2ab3470ea833db15dc2e25b85dda1d905d6bbc216b72fb761479",
+      "targets": [
+        "claude"
+      ],
+      "item": "agent:context-optimizer"
+    },
+    {
+      "path": ".claude/agents/forge-database-reviewer.md",
+      "sha256": "6748e07819c796a4b259be5d8f6c3b3df6d8f145622a97699e0bf6613561386e",
+      "targets": [
+        "claude"
+      ],
+      "item": "agent:database-reviewer"
+    },
+    {
+      "path": ".claude/agents/forge-debugger.md",
+      "sha256": "dc87a4dfef88fcc4c3c58a258af4a397a61cfac4502c57a6ea179ae85aa0a0c1",
+      "targets": [
+        "claude"
+      ],
+      "item": "agent:debugger"
+    },
+    {
+      "path": ".claude/agents/forge-dependency-auditor.md",
+      "sha256": "f1d5b48d3022e334cefe0f5083fb1b93d3fd95190ecb558c48e367f4d3bd105f",
+      "targets": [
+        "claude"
+      ],
+      "item": "agent:dependency-auditor"
+    },
+    {
+      "path": ".claude/agents/forge-documentation-writer.md",
+      "sha256": "d16451d96226c88005dd6a57f8d3621489699fda55ac6db06a24b9c372541e70",
+      "targets": [
+        "claude"
+      ],
+      "item": "agent:documentation-writer"
+    },
+    {
+      "path": ".claude/agents/forge-loop-operator.md",
+      "sha256": "2753906e5a69b5a197f0150cad5260aec5d85852a832604ef8a954836e3cd790",
+      "targets": [
+        "claude"
+      ],
+      "item": "agent:loop-operator"
+    },
+    {
+      "path": ".claude/agents/forge-mcp-builder.md",
+      "sha256": "f947bf3a035460783d7332ca97ba984fb87d3d791d7b953127af3d9e098584c5",
+      "targets": [
+        "claude"
+      ],
+      "item": "agent:mcp-builder"
+    },
+    {
+      "path": ".claude/agents/forge-performance-engineer.md",
+      "sha256": "188bbc4fdd4fdaa5ea43f2b808b9863a34f3f143fc9bb5b58ecaaf55d22afc5b",
+      "targets": [
+        "claude"
+      ],
+      "item": "agent:performance-engineer"
+    },
+    {
+      "path": ".claude/agents/forge-planner.md",
+      "sha256": "5835fd5919f8ffc1c0e442c16b23c4fff92ca532ab978995588a949722388da5",
+      "targets": [
+        "claude"
+      ],
+      "item": "agent:planner"
+    },
+    {
+      "path": ".claude/agents/forge-refactor-cleaner.md",
+      "sha256": "b9d034aaf7c7ad5c5a032cbcf01c9ef83986d66507e22484fcdb4a913beec64a",
+      "targets": [
+        "claude"
+      ],
+      "item": "agent:refactor-cleaner"
+    },
+    {
+      "path": ".claude/agents/forge-release-manager.md",
+      "sha256": "a602fcc08e10e7930b1f8ca2c96f785594712d754183fca49a04cd4640814138",
+      "targets": [
+        "claude"
+      ],
+      "item": "agent:release-manager"
+    },
+    {
+      "path": ".claude/agents/forge-security-reviewer.md",
+      "sha256": "d65671b86f2d89a3fdcfb99134f9699b41eae404338d7c5a303e057ef610fff0",
+      "targets": [
+        "claude"
+      ],
+      "item": "agent:security-reviewer"
+    },
+    {
+      "path": ".claude/agents/forge-tdd-guide.md",
+      "sha256": "84706045c3cb867d30601329ca51cc4c3bf0adeef6b3740962387065b13ed90e",
+      "targets": [
+        "claude"
+      ],
+      "item": "agent:tdd-guide"
+    },
+    {
+      "path": ".claude/commands/forge/api-design.md",
+      "sha256": "ed5a748838cf6deb998531ac6c375585e2a21810ddd656e9bf298ca8addb444b",
+      "targets": [
+        "claude"
+      ],
+      "item": "command:api-design"
+    },
+    {
+      "path": ".claude/commands/forge/build-fix.md",
+      "sha256": "f360bd8599649d0148d88eb0270cadb93ca234a8b81c3d808e83344866c36f5a",
+      "targets": [
+        "claude"
+      ],
+      "item": "command:build-fix"
+    },
+    {
+      "path": ".claude/commands/forge/checkpoint.md",
+      "sha256": "4470e65c58b638ee4b8b1418e62271456634a8799cb94b2b6dce9853763d6962",
+      "targets": [
+        "claude"
+      ],
+      "item": "command:checkpoint"
+    },
+    {
+      "path": ".claude/commands/forge/code-review.md",
+      "sha256": "8c3256d13c13f3bc0349c2afa6dc2ebd1e7cc45268de940b384eac7979084325",
+      "targets": [
+        "claude"
+      ],
+      "item": "command:code-review"
+    },
+    {
+      "path": ".claude/commands/forge/consult.md",
+      "sha256": "1d37135cb11a638494b9fc41d800fb1658b89a9db1434b37ea5098d9939e37ee",
+      "targets": [
+        "claude"
+      ],
+      "item": "command:consult"
+    },
+    {
+      "path": ".claude/commands/forge/context-budget.md",
+      "sha256": "233c74d268a6a4d1485da3e3ef4aa2f5118cf1ecac75a13e511d202a66067664",
+      "targets": [
+        "claude"
+      ],
+      "item": "command:context-budget"
+    },
+    {
+      "path": ".claude/commands/forge/cost.md",
+      "sha256": "1a1f919e4447997c37f6c45eac502b75679802f907a2fac96b1ec55f5a4d5c2c",
+      "targets": [
+        "claude"
+      ],
+      "item": "command:cost"
+    },
+    {
+      "path": ".claude/commands/forge/deps-audit.md",
+      "sha256": "5aff34b54083ed4ffffd20861e2e1e70f804300e82bda1775caa809c709002d5",
+      "targets": [
+        "claude"
+      ],
+      "item": "command:deps-audit"
+    },
+    {
+      "path": ".claude/commands/forge/evolve.md",
+      "sha256": "2748185ed80cf39c61eedbe77eb54d5ced9415826062a6271772114603da613a",
+      "targets": [
+        "claude"
+      ],
+      "item": "command:evolve"
+    },
+    {
+      "path": ".claude/commands/forge/explain.md",
+      "sha256": "cc1a65de7274020c947f588d4e4d3883f204c8fdc0cf9f657bd08ccd4a121837",
+      "targets": [
+        "claude"
+      ],
+      "item": "command:explain"
+    },
+    {
+      "path": ".claude/commands/forge/guard.md",
+      "sha256": "cabc0dbbb85b8c40a22fdb384505bb3d2a5554c601178e76c2e934b1e9c85d80",
+      "targets": [
+        "claude"
+      ],
+      "item": "command:guard"
+    },
+    {
+      "path": ".claude/commands/forge/handoff.md",
+      "sha256": "8a681f49fd6fa3d47e46561ba73f16c586018ca658b936003d5d83c5b8ed3b0c",
+      "targets": [
+        "claude"
+      ],
+      "item": "command:handoff"
+    },
+    {
+      "path": ".claude/commands/forge/instincts.md",
+      "sha256": "b5c22406c848fd39b3b5b416c13a1dd916538af35a2c99544c5d9e481f002aec",
+      "targets": [
+        "claude"
+      ],
+      "item": "command:instincts"
+    },
+    {
+      "path": ".claude/commands/forge/learn.md",
+      "sha256": "01c09be0bd27918cfaae9bca69f0ce2795afa888bf694d727787e805ac1b8b56",
+      "targets": [
+        "claude"
+      ],
+      "item": "command:learn"
+    },
+    {
+      "path": ".claude/commands/forge/loop.md",
+      "sha256": "32e7e65cfd667b62501d6cabddaedd551d35cc1f3c6532f06636c7545b210c67",
+      "targets": [
+        "claude"
+      ],
+      "item": "command:loop"
+    },
+    {
+      "path": ".claude/commands/forge/mcp-sync.md",
+      "sha256": "4b5013b063282b62e59ea88bcc0748634e47a38e45c8e811c1ba8de73cbe49bc",
+      "targets": [
+        "claude"
+      ],
+      "item": "command:mcp-sync"
+    },
+    {
+      "path": ".claude/commands/forge/plan.md",
+      "sha256": "4c66f8a2fda9e564f40f9ca475afac34ac1720aa3c64933b5b380e89ac607baa",
+      "targets": [
+        "claude"
+      ],
+      "item": "command:plan"
+    },
+    {
+      "path": ".claude/commands/forge/race.md",
+      "sha256": "e06489a10d4792cb9006027d6583f8bc7190254b2bc42a2a39065e9d86cdc89a",
+      "targets": [
+        "claude"
+      ],
+      "item": "command:race"
+    },
+    {
+      "path": ".claude/commands/forge/refactor-clean.md",
+      "sha256": "14da6eca54b1177d546abd5d3ee5532a7129c17166b66aaafec7008ae4d275ab",
+      "targets": [
+        "claude"
+      ],
+      "item": "command:refactor-clean"
+    },
+    {
+      "path": ".claude/commands/forge/release-check.md",
+      "sha256": "5c2ddf958f1ae609da1f060c88464b9cb14409a19e225b371812d3ad77b48a8c",
+      "targets": [
+        "claude"
+      ],
+      "item": "command:release-check"
+    },
+    {
+      "path": ".claude/commands/forge/review-pr.md",
+      "sha256": "2a55b16a08ccda6f9a9a40da494a56059fc246149ef93ae5674487e51ebc06e3",
+      "targets": [
+        "claude"
+      ],
+      "item": "command:review-pr"
+    },
+    {
+      "path": ".claude/commands/forge/scorecard.md",
+      "sha256": "678e161fe858783cb6ddadf19c44761e27abb23d36be4d642140ddbe6bc0eb18",
+      "targets": [
+        "claude"
+      ],
+      "item": "command:scorecard"
+    },
+    {
+      "path": ".claude/commands/forge/security-review.md",
+      "sha256": "6675bfbe8084bc3d79dc5e60ae7008a54c3aa49a259520194dc35c65501deea8",
+      "targets": [
+        "claude"
+      ],
+      "item": "command:security-review"
+    },
+    {
+      "path": ".claude/commands/forge/security-scan.md",
+      "sha256": "bfb569b867cde3964612d05e1ef2a23c75a7fc934f87100503357e6238573ff3",
+      "targets": [
+        "claude"
+      ],
+      "item": "command:security-scan"
+    },
+    {
+      "path": ".claude/commands/forge/shield.md",
+      "sha256": "718c606b6182c43dc8b2f9b028cdba56174b1627436a3ac500dc2cd3d7da7f1f",
+      "targets": [
+        "claude"
+      ],
+      "item": "command:shield"
+    },
+    {
+      "path": ".claude/commands/forge/spec.md",
+      "sha256": "ef4273c0b3d3aa029950b75f2277a088eaa79071486a8161d12e86778d3cacb9",
+      "targets": [
+        "claude"
+      ],
+      "item": "command:spec"
+    },
+    {
+      "path": ".claude/commands/forge/tdd.md",
+      "sha256": "2a4571ccc951a65c4166013719ae98fa423499e29988f9bbd537ccff814bc21a",
+      "targets": [
+        "claude"
+      ],
+      "item": "command:tdd"
+    },
+    {
+      "path": ".claude/commands/forge/test-coverage.md",
+      "sha256": "4d25c4442f72f7ed2ceafb9bed7ab5bf1882543c5f7bcbb514e3e80972ecf3d9",
+      "targets": [
+        "claude"
+      ],
+      "item": "command:test-coverage"
+    },
+    {
+      "path": ".claude/commands/forge/update-docs.md",
+      "sha256": "6545ace87b7520389c6e396f7b3d7dd39785c950e45b32c130a8d7bd15aa28d0",
+      "targets": [
+        "claude"
+      ],
+      "item": "command:update-docs"
+    },
+    {
+      "path": ".claude/commands/forge/verify.md",
+      "sha256": "195470c17cc9c7600bbc64dc782a3e5a19195ebf364cb4ff2a94759a1cca140a",
+      "targets": [
+        "claude"
+      ],
+      "item": "command:verify"
+    },
+    {
+      "path": ".claude/rules/forge/common/agents.md",
+      "sha256": "5d2f0e0e64826b40e138ad6e3cbe51bc5820ec1ad730b2edf4f621a9c9a2da4e",
+      "targets": [
+        "claude"
+      ],
+      "item": "rule:common/agents"
+    },
+    {
+      "path": ".claude/rules/forge/common/coding-style.md",
+      "sha256": "a0b09d4cdd19d448817fcef499d9c695451bd2e8ed869010a417a0451c4bd859",
+      "targets": [
+        "claude"
+      ],
+      "item": "rule:common/coding-style"
+    },
+    {
+      "path": ".claude/rules/forge/common/documentation.md",
+      "sha256": "23b7ee4091c4e2d8025e86de8512ed05f8605bc605a66a3a5c05b588c6044d04",
+      "targets": [
+        "claude"
+      ],
+      "item": "rule:common/documentation"
+    },
+    {
+      "path": ".claude/rules/forge/common/evidence.md",
+      "sha256": "94d0aa240bfd794695cd9ebb8e2e7a7f87edebc429c7c922e59baaccd2ce0859",
+      "targets": [
+        "claude"
+      ],
+      "item": "rule:common/evidence"
+    },
+    {
+      "path": ".claude/rules/forge/common/git.md",
+      "sha256": "80fc32b00242e1b5aabe090f2b0060898b77ea7d1496963966b81c2b32840ce5",
+      "targets": [
+        "claude"
+      ],
+      "item": "rule:common/git"
+    },
+    {
+      "path": ".claude/rules/forge/common/performance.md",
+      "sha256": "5310cebaef69bfc2aa1d091c2ded0eec68305bc328eadbe3e4a9826675f047a5",
+      "targets": [
+        "claude"
+      ],
+      "item": "rule:common/performance"
+    },
+    {
+      "path": ".claude/rules/forge/common/security.md",
+      "sha256": "5b22a811f125a0a60c43ad4ab420cc6e3fad0072fbbf8128bdeb997156ef6c74",
+      "targets": [
+        "claude"
+      ],
+      "item": "rule:common/security"
+    },
+    {
+      "path": ".claude/rules/forge/common/testing.md",
+      "sha256": "d15621288ce95a8bd189dd0eb16040c40319e1c0c0d37f484b79d2c2a5644efe",
+      "targets": [
+        "claude"
+      ],
+      "item": "rule:common/testing"
+    },
+    {
+      "path": ".claude/rules/forge/react/react-style.md",
+      "sha256": "18a0f297aa029262073ad920799b58e7977f849a2405f8a05ba445cd35c4e824",
+      "targets": [
+        "claude"
+      ],
+      "item": "rule:react/react-style"
+    },
+    {
+      "path": ".claude/rules/forge/typescript/node-runtime.md",
+      "sha256": "5339bfa7ab35f2b1223f2746e9ce5fa50ab663b669f5edf9b49ab05df690ab87",
+      "targets": [
+        "claude"
+      ],
+      "item": "rule:typescript/node-runtime"
+    },
+    {
+      "path": ".claude/rules/forge/typescript/typescript-style.md",
+      "sha256": "c72e8d820d4e1c52d6c842207a03412902a0a177e9005d0fe3e5d6d733357721",
+      "targets": [
+        "claude"
+      ],
+      "item": "rule:typescript/typescript-style"
+    },
+    {
+      "path": ".claude/rules/forge/typescript/typescript-testing.md",
+      "sha256": "b479ffb81f359cc37b6c5b6bb769b20d1831bf3b8807d1966f487ea13332bb70",
+      "targets": [
+        "claude"
+      ],
+      "item": "rule:typescript/typescript-testing"
+    },
+    {
+      "path": ".claude/skills/forge-agent-workflow-design/SKILL.md",
+      "sha256": "0085abf0c6f2965544a1ad3d5c92d687aef5bfcd6aab733d8fff924a8c19b73b",
+      "targets": [
+        "claude"
+      ],
+      "item": "skill:agent-workflow-design"
+    },
+    {
+      "path": ".claude/skills/forge-api-design/SKILL.md",
+      "sha256": "807fe98138e0730f221a00ba3fc6525148d45b9b6f40356a13efe57250430b57",
+      "targets": [
+        "claude"
+      ],
+      "item": "skill:api-design"
+    },
+    {
+      "path": ".claude/skills/forge-architecture-decision-records/SKILL.md",
+      "sha256": "ed206a34942ccc64b3e77e97643a5fbd1f752c84a3c503fe1d9da5dbbc3b62dc",
+      "targets": [
+        "claude"
+      ],
+      "item": "skill:architecture-decision-records"
+    },
+    {
+      "path": ".claude/skills/forge-auth-and-sessions/SKILL.md",
+      "sha256": "cdce0788e640fcb18d761e92a16811454b71ed3274cfd1937e76e4a3b4f79a3d",
+      "targets": [
+        "claude"
+      ],
+      "item": "skill:auth-and-sessions"
+    },
+    {
+      "path": ".claude/skills/forge-background-jobs/SKILL.md",
+      "sha256": "02aac28ebe7b6244f2f7f45bae55e6863d0111497d04bdacb295708a4ce500da",
+      "targets": [
+        "claude"
+      ],
+      "item": "skill:background-jobs"
+    },
+    {
+      "path": ".claude/skills/forge-caching-strategies/SKILL.md",
+      "sha256": "22468ac7a20a55bd36071789db2435f26f5ec0512e6111e2b324cac3dee7ce85",
+      "targets": [
+        "claude"
+      ],
+      "item": "skill:caching-strategies"
+    },
+    {
+      "path": ".claude/skills/forge-code-review-checklist/SKILL.md",
+      "sha256": "89609c02fb546f94f98bb2143d42c41610e5024e5a2d4bdb57495ac80e3d642f",
+      "targets": [
+        "claude"
+      ],
+      "item": "skill:code-review-checklist"
+    },
+    {
+      "path": ".claude/skills/forge-codebase-onboarding/SKILL.md",
+      "sha256": "27f429278135db5b0fab831306dae78a83c100a3baf81fb389f2ae0fd7c5b1d1",
+      "targets": [
+        "claude"
+      ],
+      "item": "skill:codebase-onboarding"
+    },
+    {
+      "path": ".claude/skills/forge-context-budget/SKILL.md",
+      "sha256": "82a4994bc328003d0c4c62b662b961d57df1fa60be5d7b0cd3886784d5a7438f",
+      "targets": [
+        "claude"
+      ],
+      "item": "skill:context-budget"
+    },
+    {
+      "path": ".claude/skills/forge-continuous-learning/SKILL.md",
+      "sha256": "bad037e662a8a0306a7caf2e0e25ad79d16adba8cb1e5080de80e0a159ba93e3",
+      "targets": [
+        "claude"
+      ],
+      "item": "skill:continuous-learning"
+    },
+    {
+      "path": ".claude/skills/forge-debugging/SKILL.md",
+      "sha256": "3916f0674645e5b6dae810b98979b96252586d8b126f91c9f101a76c20ec7fcd",
+      "targets": [
+        "claude"
+      ],
+      "item": "skill:debugging"
+    },
+    {
+      "path": ".claude/skills/forge-dependency-upgrades/SKILL.md",
+      "sha256": "1ee5fcc5ac585f762da4dd8625ab6850e3202279734ef936c752d89b82056293",
+      "targets": [
+        "claude"
+      ],
+      "item": "skill:dependency-upgrades"
+    },
+    {
+      "path": ".claude/skills/forge-error-handling/SKILL.md",
+      "sha256": "2c6134f41837b28ed24de88a07d02eda4ab3192f817eb95f193f98d72f375ab1",
+      "targets": [
+        "claude"
+      ],
+      "item": "skill:error-handling"
+    },
+    {
+      "path": ".claude/skills/forge-feature-flag-rollouts/SKILL.md",
+      "sha256": "ac6283f46acd94e109ed96a2fd65a8c8646c403a09224a883fc8a9dd2d85ec4d",
+      "targets": [
+        "claude"
+      ],
+      "item": "skill:feature-flag-rollouts"
+    },
+    {
+      "path": ".claude/skills/forge-flaky-tests/SKILL.md",
+      "sha256": "041d7d5cb3e30e15353bdf7fafddf748fd4f62e1807ccb096c4c4880aa845fc7",
+      "targets": [
+        "claude"
+      ],
+      "item": "skill:flaky-tests"
+    },
+    {
+      "path": ".claude/skills/forge-git-workflow/SKILL.md",
+      "sha256": "cf50158410e1af8e16bce0883e7732b66748aecd2f2b22186d217b5bb41f3cb0",
+      "targets": [
+        "claude"
+      ],
+      "item": "skill:git-workflow"
+    },
+    {
+      "path": ".claude/skills/forge-git-worktrees/SKILL.md",
+      "sha256": "e62a0471a8154bbbee708e3063774cab5be6a980e295836832e77c97fedbb768",
+      "targets": [
+        "claude"
+      ],
+      "item": "skill:git-worktrees"
+    },
+    {
+      "path": ".claude/skills/forge-github-actions-hardening/SKILL.md",
+      "sha256": "6b40a4daea450f0563ba9904bf1f7c2a4446e6df27de6e0410c0ecd43450d658",
+      "targets": [
+        "claude"
+      ],
+      "item": "skill:github-actions-hardening"
+    },
+    {
+      "path": ".claude/skills/forge-graphql-apis/SKILL.md",
+      "sha256": "3e33c66fbc387473de1f3f012e56a647735fdc1709326402819a97c4c96befdf",
+      "targets": [
+        "claude"
+      ],
+      "item": "skill:graphql-apis"
+    },
+    {
+      "path": ".claude/skills/forge-implementation-planning/SKILL.md",
+      "sha256": "1ab5602b2b42c79d291e43e89c93a365f64884cb5fd58931e0e738d9077d4ec9",
+      "targets": [
+        "claude"
+      ],
+      "item": "skill:implementation-planning"
+    },
+    {
+      "path": ".claude/skills/forge-kubernetes-deploys/SKILL.md",
+      "sha256": "8382f15ecb7e398fcd083af73ef0dc001de4d482fe32dbcdd7c723815f7479ed",
+      "targets": [
+        "claude"
+      ],
+      "item": "skill:kubernetes-deploys"
+    },
+    {
+      "path": ".claude/skills/forge-llm-app-engineering/SKILL.md",
+      "sha256": "d788604d39edd754c1703a6d94a88db5e77ae6aa774e6551fd81ddac13182717",
+      "targets": [
+        "claude"
+      ],
+      "item": "skill:llm-app-engineering"
+    },
+    {
+      "path": ".claude/skills/forge-llm-evals/SKILL.md",
+      "sha256": "0f462a619d74ebe2d0e8de5db64abfd0448167ee39f73be1524998bfdc5954aa",
+      "targets": [
+        "claude"
+      ],
+      "item": "skill:llm-evals"
+    },
+    {
+      "path": ".claude/skills/forge-mcp-server-development/SKILL.md",
+      "sha256": "8863d80a1ca378eee0fff1c4df7b01aba33f1b7d3c0d0caf6771e2ba0d884cbd",
+      "targets": [
+        "claude"
+      ],
+      "item": "skill:mcp-server-development"
+    },
+    {
+      "path": ".claude/skills/forge-nextjs-app-router/SKILL.md",
+      "sha256": "35e7a1efdd2724ff6c47b00f00767be08a9e78c6d4efdf0f6e2ff93984f8fc49",
+      "targets": [
+        "claude"
+      ],
+      "item": "skill:nextjs-app-router"
+    },
+    {
+      "path": ".claude/skills/forge-node-api-services/SKILL.md",
+      "sha256": "0a814aee8ab96fc8e924860272d1a0d33eebef31eb003a5764a3ae9bf62726a4",
+      "targets": [
+        "claude"
+      ],
+      "item": "skill:node-api-services"
+    },
+    {
+      "path": ".claude/skills/forge-payments-integration/SKILL.md",
+      "sha256": "9c87256788c9240acab0f67642a9f25401541a9c63fad2e8ee3aae5443ef3b6a",
+      "targets": [
+        "claude"
+      ],
+      "item": "skill:payments-integration"
+    },
+    {
+      "path": ".claude/skills/forge-postgres-queries/SKILL.md",
+      "sha256": "4a90840a165f273f907ac85d34fb65260f85c95c566aec99839ebbe3354035d3",
+      "targets": [
+        "claude"
+      ],
+      "item": "skill:postgres-queries"
+    },
+    {
+      "path": ".claude/skills/forge-prompt-injection-defense/SKILL.md",
+      "sha256": "4b2fe9717c4ae10d303511c085ba83b1f2ca059bf6664b0ac0852fe05cb240f1",
+      "targets": [
+        "claude"
+      ],
+      "item": "skill:prompt-injection-defense"
+    },
+    {
+      "path": ".claude/skills/forge-rag-pipelines/SKILL.md",
+      "sha256": "fc8865d0b98f5796db54c281220e96ae0a96a8a6ada81838d4e7ecb285ac0459",
+      "targets": [
+        "claude"
+      ],
+      "item": "skill:rag-pipelines"
+    },
+    {
+      "path": ".claude/skills/forge-react-components/SKILL.md",
+      "sha256": "f34de632207e747cc50875e554e8c8ecae0ed073bd9c8b37c753c3a8f33801d3",
+      "targets": [
+        "claude"
+      ],
+      "item": "skill:react-components"
+    },
+    {
+      "path": ".claude/skills/forge-redis-patterns/SKILL.md",
+      "sha256": "deb7ce03a635369cb8b6516b4bb159ba83d8f36bcd2bf7a298962453c0368ff7",
+      "targets": [
+        "claude"
+      ],
+      "item": "skill:redis-patterns"
+    },
+    {
+      "path": ".claude/skills/forge-refactoring-patterns/SKILL.md",
+      "sha256": "445cdf12bb904d6b22d0fe7889115f49b6f52f3f982f279060850875bf2d4658",
+      "targets": [
+        "claude"
+      ],
+      "item": "skill:refactoring-patterns"
+    },
+    {
+      "path": ".claude/skills/forge-research-first/SKILL.md",
+      "sha256": "df3b7129afc81aaf69f54bd7286cb601913b93cbde7b41a682408ab8464c00de",
+      "targets": [
+        "claude"
+      ],
+      "item": "skill:research-first"
+    },
+    {
+      "path": ".claude/skills/forge-secrets-management/SKILL.md",
+      "sha256": "d42fd3ceb095fbad13b4bfe60d88135b5188ad5369b292e37be1661aea88953b",
+      "targets": [
+        "claude"
+      ],
+      "item": "skill:secrets-management"
+    },
+    {
+      "path": ".claude/skills/forge-secure-changes/SKILL.md",
+      "sha256": "b15c315957b98d248a54229b17e0bcc51074ca1881d65d1a422d6223ce75e5ef",
+      "targets": [
+        "claude"
+      ],
+      "item": "skill:secure-changes"
+    },
+    {
+      "path": ".claude/skills/forge-security-review/SKILL.md",
+      "sha256": "a194084989dc68747c76fe6e66334debf067daa33f4a34a139dae2c6b07214bd",
+      "targets": [
+        "claude"
+      ],
+      "item": "skill:security-review"
+    },
+    {
+      "path": ".claude/skills/forge-spec-driven-development/SKILL.md",
+      "sha256": "828d1a816e1a45e5347d379b8347d04bedf1c8e8b96aa494e59fa77a4f831cf0",
+      "targets": [
+        "claude"
+      ],
+      "item": "skill:spec-driven-development"
+    },
+    {
+      "path": ".claude/skills/forge-strategic-compaction/SKILL.md",
+      "sha256": "529e34784ddf1468ab0f478aa5e8fff2c0e388e50d537e765a1566658b6a2b2a",
+      "targets": [
+        "claude"
+      ],
+      "item": "skill:strategic-compaction"
+    },
+    {
+      "path": ".claude/skills/forge-supply-chain-security/SKILL.md",
+      "sha256": "23a6503c56607187cde288988dad7b0212fd18b7018a2612f05f13bcc644c339",
+      "targets": [
+        "claude"
+      ],
+      "item": "skill:supply-chain-security"
+    },
+    {
+      "path": ".claude/skills/forge-tdd-workflow/SKILL.md",
+      "sha256": "fd562368a41245f914e7bcf38c13c84c7c562dfb0cb02f94a0184fc1da9ba89f",
+      "targets": [
+        "claude"
+      ],
+      "item": "skill:tdd-workflow"
+    },
+    {
+      "path": ".claude/skills/forge-terraform-changes/SKILL.md",
+      "sha256": "1b7c6b0213acdcf0d7c5e60bd9c619227d7ef797e36dfdfa9f04f61e23e290a1",
+      "targets": [
+        "claude"
+      ],
+      "item": "skill:terraform-changes"
+    },
+    {
+      "path": ".claude/skills/forge-typescript-strict/SKILL.md",
+      "sha256": "c5b0213c22700abebdab019f3d44cb45bb91fa32216a6e28dc44463761832ec2",
+      "targets": [
+        "claude"
+      ],
+      "item": "skill:typescript-strict"
+    },
+    {
+      "path": ".claude/skills/forge-verification-loop/SKILL.md",
+      "sha256": "289a6ac13d90698bfb7dc08d4b77d53f49da8b91084537e105b993a8d5abd70d",
+      "targets": [
+        "claude"
+      ],
+      "item": "skill:verification-loop"
+    },
+    {
+      "path": ".claude/skills/forge-web-performance/SKILL.md",
+      "sha256": "5bbc4cfee0b0be4b70037d7aab9679a24dfee9ca059bc26e08a436565dfa6f95",
+      "targets": [
+        "claude"
+      ],
+      "item": "skill:web-performance"
+    },
+    {
+      "path": ".cursor/commands/forge-api-design.md",
+      "sha256": "9ea42bdba3d756057d3b86cc521a12579ff233d22730e9d8a6c6e0cac74a520d",
+      "targets": [
+        "cursor"
+      ],
+      "item": "command:api-design"
+    },
+    {
+      "path": ".cursor/commands/forge-build-fix.md",
+      "sha256": "5af28d1d9fe720e07edab3583a936695f7732dff5664cc0bd03e6c4b67286b49",
+      "targets": [
+        "cursor"
+      ],
+      "item": "command:build-fix"
+    },
+    {
+      "path": ".cursor/commands/forge-checkpoint.md",
+      "sha256": "8989fef780663d517584be3f6b4e4cbfaf9fed5d55d24f12bb2e3722a338caed",
+      "targets": [
+        "cursor"
+      ],
+      "item": "command:checkpoint"
+    },
+    {
+      "path": ".cursor/commands/forge-code-review.md",
+      "sha256": "36b21242e2f522c839af5da1a10311c8d1fdfe60b752ccae7d9a8662aabb73ba",
+      "targets": [
+        "cursor"
+      ],
+      "item": "command:code-review"
+    },
+    {
+      "path": ".cursor/commands/forge-consult.md",
+      "sha256": "3db4371f6d5dc4f12ac56283752b96be08401e34d00974d6711e1ec70ecec519",
+      "targets": [
+        "cursor"
+      ],
+      "item": "command:consult"
+    },
+    {
+      "path": ".cursor/commands/forge-context-budget.md",
+      "sha256": "669a31ce8ecd7dba7190c0bdc495aeb06bcada095ab1a7e199c8dae80ed7fdad",
+      "targets": [
+        "cursor"
+      ],
+      "item": "command:context-budget"
+    },
+    {
+      "path": ".cursor/commands/forge-cost.md",
+      "sha256": "0cb28504f3edc2906fe21a8cd7ddd66ea7caf386b7b1bd9d895c382a01d22569",
+      "targets": [
+        "cursor"
+      ],
+      "item": "command:cost"
+    },
+    {
+      "path": ".cursor/commands/forge-deps-audit.md",
+      "sha256": "06b9b35832540b240f1aab027915b4f96081f28798a470b5a18948f8d8c9f5e6",
+      "targets": [
+        "cursor"
+      ],
+      "item": "command:deps-audit"
+    },
+    {
+      "path": ".cursor/commands/forge-evolve.md",
+      "sha256": "3a225c4184e0d8c545a0ac935bb55061bb7bb8845fce13ca9dd125dc409396da",
+      "targets": [
+        "cursor"
+      ],
+      "item": "command:evolve"
+    },
+    {
+      "path": ".cursor/commands/forge-explain.md",
+      "sha256": "edfb9a565856acf07a0ef9d70a31ba1f04f2bb2381ac8b9dfab67ea0fcc334f9",
+      "targets": [
+        "cursor"
+      ],
+      "item": "command:explain"
+    },
+    {
+      "path": ".cursor/commands/forge-guard.md",
+      "sha256": "f73421a5bb5cbd5f89d000bc12d9223f8b738ab6ea1fca6781e9dd03b54544c3",
+      "targets": [
+        "cursor"
+      ],
+      "item": "command:guard"
+    },
+    {
+      "path": ".cursor/commands/forge-handoff.md",
+      "sha256": "18d47c0373e0b0b7ada0df1c54c1e176cff0fa7ce08a3e6f7bc208cb4d40aeb7",
+      "targets": [
+        "cursor"
+      ],
+      "item": "command:handoff"
+    },
+    {
+      "path": ".cursor/commands/forge-instincts.md",
+      "sha256": "9822c46243479e70723f0760249edb010b1b5f9413ceeed47e6acda52392a96c",
+      "targets": [
+        "cursor"
+      ],
+      "item": "command:instincts"
+    },
+    {
+      "path": ".cursor/commands/forge-learn.md",
+      "sha256": "968e06e799b7f177deafdb0fb6f60858592a519d4fcf7c121ac99e94480b1add",
+      "targets": [
+        "cursor"
+      ],
+      "item": "command:learn"
+    },
+    {
+      "path": ".cursor/commands/forge-loop.md",
+      "sha256": "37ec2f42a4c188a73ce4574413124961810217d66b6f3489d94b0f373ad24d36",
+      "targets": [
+        "cursor"
+      ],
+      "item": "command:loop"
+    },
+    {
+      "path": ".cursor/commands/forge-mcp-sync.md",
+      "sha256": "81ebae26aee392e906a56a237623acd8d113b7b3f14fff68ec68754bf7ae5548",
+      "targets": [
+        "cursor"
+      ],
+      "item": "command:mcp-sync"
+    },
+    {
+      "path": ".cursor/commands/forge-plan.md",
+      "sha256": "e083dbeef67146dec2af7a9ced5a78462ba35e7b0051b9c60a39e019bfe1db56",
+      "targets": [
+        "cursor"
+      ],
+      "item": "command:plan"
+    },
+    {
+      "path": ".cursor/commands/forge-race.md",
+      "sha256": "67da3ad3c01749209414613819c57dd44347482f3087e672a8db2ee5a65e28f5",
+      "targets": [
+        "cursor"
+      ],
+      "item": "command:race"
+    },
+    {
+      "path": ".cursor/commands/forge-refactor-clean.md",
+      "sha256": "6e1870af054994c85094618b9ad13064c258e8cda493e8b04e31188904198635",
+      "targets": [
+        "cursor"
+      ],
+      "item": "command:refactor-clean"
+    },
+    {
+      "path": ".cursor/commands/forge-release-check.md",
+      "sha256": "e790b9032fa8664da18c5098ef921b28975b2288b5062266cd3809533ce1f7ac",
+      "targets": [
+        "cursor"
+      ],
+      "item": "command:release-check"
+    },
+    {
+      "path": ".cursor/commands/forge-review-pr.md",
+      "sha256": "baa12f8abfbb09d500f0d8bec5f5569e5545dcc9109a3dd75782e60aa78440b7",
+      "targets": [
+        "cursor"
+      ],
+      "item": "command:review-pr"
+    },
+    {
+      "path": ".cursor/commands/forge-scorecard.md",
+      "sha256": "c64fdafad324a8d09a4340713570932e42daee815171b5d470ca3aa775e55fe4",
+      "targets": [
+        "cursor"
+      ],
+      "item": "command:scorecard"
+    },
+    {
+      "path": ".cursor/commands/forge-security-review.md",
+      "sha256": "2480a20efb6fba7a7f6ceae7fb0fa74f87b502ed275b98c13afb85dd9b64292a",
+      "targets": [
+        "cursor"
+      ],
+      "item": "command:security-review"
+    },
+    {
+      "path": ".cursor/commands/forge-security-scan.md",
+      "sha256": "24e00da1a72194644b7f4ff6b01c655c47345a88b8ddef0da638a6cc24a11157",
+      "targets": [
+        "cursor"
+      ],
+      "item": "command:security-scan"
+    },
+    {
+      "path": ".cursor/commands/forge-shield.md",
+      "sha256": "2dbb929c2414e343b0bd6c886cf679fd6daf27fc9abd9f7590187b9a930bd61c",
+      "targets": [
+        "cursor"
+      ],
+      "item": "command:shield"
+    },
+    {
+      "path": ".cursor/commands/forge-spec.md",
+      "sha256": "ff5198a65e2b0223e27cf4f992a19d11e448286a60a2bc417ba30c83339f84c2",
+      "targets": [
+        "cursor"
+      ],
+      "item": "command:spec"
+    },
+    {
+      "path": ".cursor/commands/forge-tdd.md",
+      "sha256": "ef4cd4a25ca01bff87df553687c50f41040cfba070ad6619463dcaceb100e6f6",
+      "targets": [
+        "cursor"
+      ],
+      "item": "command:tdd"
+    },
+    {
+      "path": ".cursor/commands/forge-test-coverage.md",
+      "sha256": "2cecd5235ca30119ae8755315e6f0dc1e507b269176e4a7f5d559996772550c7",
+      "targets": [
+        "cursor"
+      ],
+      "item": "command:test-coverage"
+    },
+    {
+      "path": ".cursor/commands/forge-update-docs.md",
+      "sha256": "fad2a8e15dee5f92b8239d2ea293f6cc11acd8b4dc19f33bb7c579c8f0b3dc03",
+      "targets": [
+        "cursor"
+      ],
+      "item": "command:update-docs"
+    },
+    {
+      "path": ".cursor/commands/forge-verify.md",
+      "sha256": "a918a93c8062126d96a5b7d30379a04cdc64679c989ecff482a72890926eb8bd",
+      "targets": [
+        "cursor"
+      ],
+      "item": "command:verify"
+    },
+    {
+      "path": ".cursor/rules/forge-agent-api-designer.mdc",
+      "sha256": "cebee14eeaa376e0766da40173683355fd13a1cda62e2d3a751e3ba1156f1885",
+      "targets": [
+        "cursor"
+      ],
+      "item": "agent:api-designer"
+    },
+    {
+      "path": ".cursor/rules/forge-agent-architect.mdc",
+      "sha256": "33d10aaf0cd05b4ac19752bdcd9da23bb0d7ccbade2415d8a1bd8c130cdb4a14",
+      "targets": [
+        "cursor"
+      ],
+      "item": "agent:architect"
+    },
+    {
+      "path": ".cursor/rules/forge-agent-build-error-resolver.mdc",
+      "sha256": "4a5aff4fa2a452d7ff9cdf21559a1b35b06fed0dc5aa477d6b607247a2f56ee3",
+      "targets": [
+        "cursor"
+      ],
+      "item": "agent:build-error-resolver"
+    },
+    {
+      "path": ".cursor/rules/forge-agent-ci-security-reviewer.mdc",
+      "sha256": "f272fc8cdc70d009915ff19e4a5cf1a89626a3370b4ed823c8960c8b3b7a76d1",
+      "targets": [
+        "cursor"
+      ],
+      "item": "agent:ci-security-reviewer"
+    },
+    {
+      "path": ".cursor/rules/forge-agent-code-reviewer.mdc",
+      "sha256": "33d918c03ee7c71fdc39a8f2780beb068ce6eaf17c34b0599eb2d22be1a273bc",
+      "targets": [
+        "cursor"
+      ],
+      "item": "agent:code-reviewer"
+    },
+    {
+      "path": ".cursor/rules/forge-agent-context-optimizer.mdc",
+      "sha256": "c2f9975e4df2ebb75348991df4aa4b5e3c32ba49e140777a4a6f5bc35e087d0e",
+      "targets": [
+        "cursor"
+      ],
+      "item": "agent:context-optimizer"
+    },
+    {
+      "path": ".cursor/rules/forge-agent-database-reviewer.mdc",
+      "sha256": "7f5504b32f108ccb2025e9c139e0ada155d78425c3beb81e8826b445a84617e2",
+      "targets": [
+        "cursor"
+      ],
+      "item": "agent:database-reviewer"
+    },
+    {
+      "path": ".cursor/rules/forge-agent-debugger.mdc",
+      "sha256": "e9c5731701d725712c684e3a8da6de345dbde12f596dc1dac182307fb0a88c45",
+      "targets": [
+        "cursor"
+      ],
+      "item": "agent:debugger"
+    },
+    {
+      "path": ".cursor/rules/forge-agent-dependency-auditor.mdc",
+      "sha256": "caefd0aabbc4e2b3d018c6c96bfdda041ebded4737c5a638df2681e4343a09e9",
+      "targets": [
+        "cursor"
+      ],
+      "item": "agent:dependency-auditor"
+    },
+    {
+      "path": ".cursor/rules/forge-agent-documentation-writer.mdc",
+      "sha256": "cb1815d71b278528d7e1824da772c32935e2c73811086b0426e97f98ac988c8b",
+      "targets": [
+        "cursor"
+      ],
+      "item": "agent:documentation-writer"
+    },
+    {
+      "path": ".cursor/rules/forge-agent-loop-operator.mdc",
+      "sha256": "0f50b3219953f6825f762bb787e75c3a8e2a60e0026a105d2c4704d92ea60af0",
+      "targets": [
+        "cursor"
+      ],
+      "item": "agent:loop-operator"
+    },
+    {
+      "path": ".cursor/rules/forge-agent-mcp-builder.mdc",
+      "sha256": "2d8e813694910e9242b9c23e5e64c8513b3a55861e316313483da7b3bc8ad09f",
+      "targets": [
+        "cursor"
+      ],
+      "item": "agent:mcp-builder"
+    },
+    {
+      "path": ".cursor/rules/forge-agent-performance-engineer.mdc",
+      "sha256": "c27ae4e26358535e0d6c59d84d39cb5ec4d6f19f52d7527c81c2661a0304aed0",
+      "targets": [
+        "cursor"
+      ],
+      "item": "agent:performance-engineer"
+    },
+    {
+      "path": ".cursor/rules/forge-agent-planner.mdc",
+      "sha256": "86d5eb3457fe3adec45c66709f52ab19247baf218dad63503837edfdc6d42c94",
+      "targets": [
+        "cursor"
+      ],
+      "item": "agent:planner"
+    },
+    {
+      "path": ".cursor/rules/forge-agent-refactor-cleaner.mdc",
+      "sha256": "fe7b0bd19c1dc7c605fe0a86e7dd52a0e0fc523e9825d8c47e8afec92e0abb5a",
+      "targets": [
+        "cursor"
+      ],
+      "item": "agent:refactor-cleaner"
+    },
+    {
+      "path": ".cursor/rules/forge-agent-release-manager.mdc",
+      "sha256": "36bd3912fa63e78413f30d4737e7d35bc1409903f4d5b674246a4c2c5ebaca24",
+      "targets": [
+        "cursor"
+      ],
+      "item": "agent:release-manager"
+    },
+    {
+      "path": ".cursor/rules/forge-agent-security-reviewer.mdc",
+      "sha256": "feaaae37533b006b0de3b7f21929ac680eace8fc25cc22a8183f1a5572c26132",
+      "targets": [
+        "cursor"
+      ],
+      "item": "agent:security-reviewer"
+    },
+    {
+      "path": ".cursor/rules/forge-agent-tdd-guide.mdc",
+      "sha256": "c6c687c8fb4b84261d81944405a85b8250a238e5dda132b094d292b9cff67dc5",
+      "targets": [
+        "cursor"
+      ],
+      "item": "agent:tdd-guide"
+    },
+    {
+      "path": ".cursor/rules/forge-common-agents.mdc",
+      "sha256": "94e4065b96908545b075eeb8a9b9dd8fdb16e49e314fb35aa7a0844a5601c515",
+      "targets": [
+        "cursor"
+      ],
+      "item": "rule:common/agents"
+    },
+    {
+      "path": ".cursor/rules/forge-common-coding-style.mdc",
+      "sha256": "412f76c0b25efeaa1693d94b04e06537e2fb049d048fc605911525365b5e525e",
+      "targets": [
+        "cursor"
+      ],
+      "item": "rule:common/coding-style"
+    },
+    {
+      "path": ".cursor/rules/forge-common-documentation.mdc",
+      "sha256": "72e86504d4e0c84769c322a726699abcf62dda5dbeaa48dd7de6d804064f7d49",
+      "targets": [
+        "cursor"
+      ],
+      "item": "rule:common/documentation"
+    },
+    {
+      "path": ".cursor/rules/forge-common-evidence.mdc",
+      "sha256": "f6f72bc29f0b55dbb0e28600bd8a04821922a710f9e4cf11084d288b9f6221b3",
+      "targets": [
+        "cursor"
+      ],
+      "item": "rule:common/evidence"
+    },
+    {
+      "path": ".cursor/rules/forge-common-git.mdc",
+      "sha256": "296bea889d2bcda20e595542397f1b6845667418135518433500ed189d9c861e",
+      "targets": [
+        "cursor"
+      ],
+      "item": "rule:common/git"
+    },
+    {
+      "path": ".cursor/rules/forge-common-performance.mdc",
+      "sha256": "52fec7b3dd0b61067fbc1a7c8ae8c6df41581d51f27447afbf25042ff857e9c4",
+      "targets": [
+        "cursor"
+      ],
+      "item": "rule:common/performance"
+    },
+    {
+      "path": ".cursor/rules/forge-common-security.mdc",
+      "sha256": "0c0d79db75a1a98aac9d642934aa8345b6c90f93c58cf5498393627bf115b8b7",
+      "targets": [
+        "cursor"
+      ],
+      "item": "rule:common/security"
+    },
+    {
+      "path": ".cursor/rules/forge-common-testing.mdc",
+      "sha256": "7e3375779c026d5cb1ed7874f3f99db840084425ccbe96fd0e4f0580b22177f1",
+      "targets": [
+        "cursor"
+      ],
+      "item": "rule:common/testing"
+    },
+    {
+      "path": ".cursor/rules/forge-react-react-style.mdc",
+      "sha256": "49c7a3c5b6276163b4ef4ad171cfe829e38a658e2c9c6068f6b7a8566c49a24d",
+      "targets": [
+        "cursor"
+      ],
+      "item": "rule:react/react-style"
+    },
+    {
+      "path": ".cursor/rules/forge-skill-agent-workflow-design.mdc",
+      "sha256": "13123e0da15e194523c82c4cb415a7ace513fd8f781e53ee4b6ed8b40905def2",
+      "targets": [
+        "cursor"
+      ],
+      "item": "skill:agent-workflow-design"
+    },
+    {
+      "path": ".cursor/rules/forge-skill-api-design.mdc",
+      "sha256": "7917afa56bf26376639b5caa28f95682b24553a1f8f5683e0df273478747d808",
+      "targets": [
+        "cursor"
+      ],
+      "item": "skill:api-design"
+    },
+    {
+      "path": ".cursor/rules/forge-skill-architecture-decision-records.mdc",
+      "sha256": "9ada29d46d702548b013e4714699cfb97a3107ac74f6871a0533832ef7951ecb",
+      "targets": [
+        "cursor"
+      ],
+      "item": "skill:architecture-decision-records"
+    },
+    {
+      "path": ".cursor/rules/forge-skill-auth-and-sessions.mdc",
+      "sha256": "e65c5827f78d83bf714b192b395ac318cdc38973e3e813719cba3397a7c7e694",
+      "targets": [
+        "cursor"
+      ],
+      "item": "skill:auth-and-sessions"
+    },
+    {
+      "path": ".cursor/rules/forge-skill-background-jobs.mdc",
+      "sha256": "35956f1008e3ec8f0ad3ca2ddc2bbe690b95ca8e4394fd9bbf55fd36142046b0",
+      "targets": [
+        "cursor"
+      ],
+      "item": "skill:background-jobs"
+    },
+    {
+      "path": ".cursor/rules/forge-skill-caching-strategies.mdc",
+      "sha256": "93ab2f40f26325bce524c8d85fe58e1dafe8282d62684c6aa4e58ac0671ba52f",
+      "targets": [
+        "cursor"
+      ],
+      "item": "skill:caching-strategies"
+    },
+    {
+      "path": ".cursor/rules/forge-skill-code-review-checklist.mdc",
+      "sha256": "3dbb1fb98f2aaed24fabd3b79cdd103764331fb938116954e5979aefec26ca18",
+      "targets": [
+        "cursor"
+      ],
+      "item": "skill:code-review-checklist"
+    },
+    {
+      "path": ".cursor/rules/forge-skill-codebase-onboarding.mdc",
+      "sha256": "c0bd9d4e5738f76be7aee6be709c9b7c6d42f0a581e40fd990a98ce915446965",
+      "targets": [
+        "cursor"
+      ],
+      "item": "skill:codebase-onboarding"
+    },
+    {
+      "path": ".cursor/rules/forge-skill-context-budget.mdc",
+      "sha256": "c0289b70403a2a7744ab71f9617b2c77556a49efa27a1afff3101723bcd13163",
+      "targets": [
+        "cursor"
+      ],
+      "item": "skill:context-budget"
+    },
+    {
+      "path": ".cursor/rules/forge-skill-continuous-learning.mdc",
+      "sha256": "31f9a9353d247faeec248b2b5d003bf6c72639700843ee4349ee7a7b76108d0a",
+      "targets": [
+        "cursor"
+      ],
+      "item": "skill:continuous-learning"
+    },
+    {
+      "path": ".cursor/rules/forge-skill-debugging.mdc",
+      "sha256": "ab1a23ebbe00918b1fb0e21c942ae1a8ef950ae4dfc7f539668669b720f79e39",
+      "targets": [
+        "cursor"
+      ],
+      "item": "skill:debugging"
+    },
+    {
+      "path": ".cursor/rules/forge-skill-dependency-upgrades.mdc",
+      "sha256": "a7845554770d1453bf0bc4c07f67944d68c948ebb95178cc4ac4fa0dde52266d",
+      "targets": [
+        "cursor"
+      ],
+      "item": "skill:dependency-upgrades"
+    },
+    {
+      "path": ".cursor/rules/forge-skill-error-handling.mdc",
+      "sha256": "d38fad5959bc48ac7c6563cb7f2c8575bf61dc5e9ef3c2e9cc4d585565fdbf83",
+      "targets": [
+        "cursor"
+      ],
+      "item": "skill:error-handling"
+    },
+    {
+      "path": ".cursor/rules/forge-skill-feature-flag-rollouts.mdc",
+      "sha256": "6ea9a8535940ba90fa5749f2e68b05b17b177d960a51b606c063fcd8c7e67fca",
+      "targets": [
+        "cursor"
+      ],
+      "item": "skill:feature-flag-rollouts"
+    },
+    {
+      "path": ".cursor/rules/forge-skill-flaky-tests.mdc",
+      "sha256": "050b62aec701b16ba8db44073d230a0169eea6865f08169d4d38698bbbac0d10",
+      "targets": [
+        "cursor"
+      ],
+      "item": "skill:flaky-tests"
+    },
+    {
+      "path": ".cursor/rules/forge-skill-git-workflow.mdc",
+      "sha256": "3bb04f72c380acf3852730823917e94d1f3e1003b049fd91a387dcbcf2e4f0f0",
+      "targets": [
+        "cursor"
+      ],
+      "item": "skill:git-workflow"
+    },
+    {
+      "path": ".cursor/rules/forge-skill-git-worktrees.mdc",
+      "sha256": "fbfada97263e95b49583967eca07f9eb175eb4a2c02dc833f518737bd6044bd0",
+      "targets": [
+        "cursor"
+      ],
+      "item": "skill:git-worktrees"
+    },
+    {
+      "path": ".cursor/rules/forge-skill-github-actions-hardening.mdc",
+      "sha256": "a2ad72a1e7f6dc6c2142b3578f3b43907b72312b020df0d30feb68c11b187014",
+      "targets": [
+        "cursor"
+      ],
+      "item": "skill:github-actions-hardening"
+    },
+    {
+      "path": ".cursor/rules/forge-skill-graphql-apis.mdc",
+      "sha256": "1ddb8079c8849b598233bf29f569924f9a6bbf7fd13197748bdd9a333218df53",
+      "targets": [
+        "cursor"
+      ],
+      "item": "skill:graphql-apis"
+    },
+    {
+      "path": ".cursor/rules/forge-skill-implementation-planning.mdc",
+      "sha256": "6457c573b19994299f8d52aa3dc93ad1d0f4c9b086e107514e164e0df5b11f27",
+      "targets": [
+        "cursor"
+      ],
+      "item": "skill:implementation-planning"
+    },
+    {
+      "path": ".cursor/rules/forge-skill-kubernetes-deploys.mdc",
+      "sha256": "705a1f692b825dd7e088a6685a0d9c8dcea7a7f408c9b1582381517471da8d08",
+      "targets": [
+        "cursor"
+      ],
+      "item": "skill:kubernetes-deploys"
+    },
+    {
+      "path": ".cursor/rules/forge-skill-llm-app-engineering.mdc",
+      "sha256": "05be607cba8d044ab5eb4328b93a0966a7f9334b581f371d7bf7c2493f218371",
+      "targets": [
+        "cursor"
+      ],
+      "item": "skill:llm-app-engineering"
+    },
+    {
+      "path": ".cursor/rules/forge-skill-llm-evals.mdc",
+      "sha256": "d65dcaa03ea4b835af8de3e2f064545d26c7042ebf5f6c072ad9f08cb4e783c1",
+      "targets": [
+        "cursor"
+      ],
+      "item": "skill:llm-evals"
+    },
+    {
+      "path": ".cursor/rules/forge-skill-mcp-server-development.mdc",
+      "sha256": "47d04aca0e9e2df1f0dd9ed346b73f54814ef06875ad0c0830c5a852252de9c4",
+      "targets": [
+        "cursor"
+      ],
+      "item": "skill:mcp-server-development"
+    },
+    {
+      "path": ".cursor/rules/forge-skill-nextjs-app-router.mdc",
+      "sha256": "2001dccb9d76b21cca0ba6d6b69d866ff3767816f16b4d87ac1ccccf2208dd75",
+      "targets": [
+        "cursor"
+      ],
+      "item": "skill:nextjs-app-router"
+    },
+    {
+      "path": ".cursor/rules/forge-skill-node-api-services.mdc",
+      "sha256": "4d08bc3c861be3b921f2b7f915ae279ab8214fca1613fef4d55e3af5c1f05f61",
+      "targets": [
+        "cursor"
+      ],
+      "item": "skill:node-api-services"
+    },
+    {
+      "path": ".cursor/rules/forge-skill-payments-integration.mdc",
+      "sha256": "5925a2577ed58e9b37ad484877110450c9af90cb6be30107b970b455d7cbfc5e",
+      "targets": [
+        "cursor"
+      ],
+      "item": "skill:payments-integration"
+    },
+    {
+      "path": ".cursor/rules/forge-skill-postgres-queries.mdc",
+      "sha256": "fa0691c38fba2c3878e474da597ba9b7ba7b4a63733dc8d9d603fb995aab7791",
+      "targets": [
+        "cursor"
+      ],
+      "item": "skill:postgres-queries"
+    },
+    {
+      "path": ".cursor/rules/forge-skill-prompt-injection-defense.mdc",
+      "sha256": "2dcdeb2f3a42e5d8d8b99374439d0e5e07a1eec492197f3ee48da8111b9b15db",
+      "targets": [
+        "cursor"
+      ],
+      "item": "skill:prompt-injection-defense"
+    },
+    {
+      "path": ".cursor/rules/forge-skill-rag-pipelines.mdc",
+      "sha256": "36bc32b458d339a9e953f55ccf7a37592e85cf316e8b78682c3bd3c6d1e9b1ae",
+      "targets": [
+        "cursor"
+      ],
+      "item": "skill:rag-pipelines"
+    },
+    {
+      "path": ".cursor/rules/forge-skill-react-components.mdc",
+      "sha256": "aecf3ac92adb0a548cb325db7961a3bb3004b30313df31cbe8b0c1324d7f3527",
+      "targets": [
+        "cursor"
+      ],
+      "item": "skill:react-components"
+    },
+    {
+      "path": ".cursor/rules/forge-skill-redis-patterns.mdc",
+      "sha256": "5fb2a107370094ac0bf4003f6ef87569d439bef9878d8abce50e60a4b2ad0be3",
+      "targets": [
+        "cursor"
+      ],
+      "item": "skill:redis-patterns"
+    },
+    {
+      "path": ".cursor/rules/forge-skill-refactoring-patterns.mdc",
+      "sha256": "55ccfa74ebdbb8cb286bff585f1b8ae6ea7ec94428ceb46cff9adbb3406edc4c",
+      "targets": [
+        "cursor"
+      ],
+      "item": "skill:refactoring-patterns"
+    },
+    {
+      "path": ".cursor/rules/forge-skill-research-first.mdc",
+      "sha256": "df2399dd18f505956737c813f34d89cd26c3be784c3c7d01582089df4d70f395",
+      "targets": [
+        "cursor"
+      ],
+      "item": "skill:research-first"
+    },
+    {
+      "path": ".cursor/rules/forge-skill-secrets-management.mdc",
+      "sha256": "0b16668beefb6f43b70f59000695262ae57c26c88161843ff432e1d6ecba8bd5",
+      "targets": [
+        "cursor"
+      ],
+      "item": "skill:secrets-management"
+    },
+    {
+      "path": ".cursor/rules/forge-skill-secure-changes.mdc",
+      "sha256": "cc9bb46465c5c39c56c010415130b184e6fdae757c9d2b55f4244e639cd9d70a",
+      "targets": [
+        "cursor"
+      ],
+      "item": "skill:secure-changes"
+    },
+    {
+      "path": ".cursor/rules/forge-skill-security-review.mdc",
+      "sha256": "56b7bf7693f3c52ed626671572271085492eb7792f163bd08c9f8db81fc65106",
+      "targets": [
+        "cursor"
+      ],
+      "item": "skill:security-review"
+    },
+    {
+      "path": ".cursor/rules/forge-skill-spec-driven-development.mdc",
+      "sha256": "8a87d0af2302b571d429f99493ce72f475369d202c72c72dff5df0c2cc8ceccc",
+      "targets": [
+        "cursor"
+      ],
+      "item": "skill:spec-driven-development"
+    },
+    {
+      "path": ".cursor/rules/forge-skill-strategic-compaction.mdc",
+      "sha256": "a73e69ca5209d7cad30d3c80712b86f0464c0a4aab3fc83c831fae4b50b9411a",
+      "targets": [
+        "cursor"
+      ],
+      "item": "skill:strategic-compaction"
+    },
+    {
+      "path": ".cursor/rules/forge-skill-supply-chain-security.mdc",
+      "sha256": "5c7ac952fe90f52ee6ad4c8b1732ff4f1f39c824cb1ab253cb50e5144b33ab50",
+      "targets": [
+        "cursor"
+      ],
+      "item": "skill:supply-chain-security"
+    },
+    {
+      "path": ".cursor/rules/forge-skill-tdd-workflow.mdc",
+      "sha256": "9281635028b4e09a949c095f53afebcd311c51587582d26ab7b37c9a67025f51",
+      "targets": [
+        "cursor"
+      ],
+      "item": "skill:tdd-workflow"
+    },
+    {
+      "path": ".cursor/rules/forge-skill-terraform-changes.mdc",
+      "sha256": "dd3e3c4390e8d12cc1a2408d613ff49447236d719507788171f084bb52125c16",
+      "targets": [
+        "cursor"
+      ],
+      "item": "skill:terraform-changes"
+    },
+    {
+      "path": ".cursor/rules/forge-skill-typescript-strict.mdc",
+      "sha256": "650d9343fe18c18adb6c8929fa6afefe045cd8922fa2e56bf92a70ab513349ae",
+      "targets": [
+        "cursor"
+      ],
+      "item": "skill:typescript-strict"
+    },
+    {
+      "path": ".cursor/rules/forge-skill-verification-loop.mdc",
+      "sha256": "0ac6ade23514df24800ef899cdfeb220c9a248dd00c328832d1199f2b0f44b48",
+      "targets": [
+        "cursor"
+      ],
+      "item": "skill:verification-loop"
+    },
+    {
+      "path": ".cursor/rules/forge-skill-web-performance.mdc",
+      "sha256": "9aaf24c47e0212658acc1b7b93621a70576a1111e2bebd7c5c1359b9b9ff7861",
+      "targets": [
+        "cursor"
+      ],
+      "item": "skill:web-performance"
+    },
+    {
+      "path": ".cursor/rules/forge-typescript-node-runtime.mdc",
+      "sha256": "c3a10e901c24bf2bb79f0e083ffbeaf6312f191412851162456e328eceba9f34",
+      "targets": [
+        "cursor"
+      ],
+      "item": "rule:typescript/node-runtime"
+    },
+    {
+      "path": ".cursor/rules/forge-typescript-typescript-style.mdc",
+      "sha256": "c907958ba4683ddc278a8bd838543053020d8a8ec77c998099cbd7ad20a6b544",
+      "targets": [
+        "cursor"
+      ],
+      "item": "rule:typescript/typescript-style"
+    },
+    {
+      "path": ".cursor/rules/forge-typescript-typescript-testing.mdc",
+      "sha256": "8d94d73095deb10dc8f0df539b46cf116ad4d49f2924a3e2eea4c898fa72dbef",
+      "targets": [
+        "cursor"
+      ],
+      "item": "rule:typescript/typescript-testing"
+    },
+    {
+      "path": ".forge/harness/agents/api-designer.md",
+      "sha256": "17ad636bce543298cd9173f0a1f95ef2054d68900041e7fc43a5ce2b3e51e1a8",
+      "targets": [
+        "codex"
+      ],
+      "item": "agent:api-designer"
+    },
+    {
+      "path": ".forge/harness/agents/architect.md",
+      "sha256": "35741e027621342cc12b327d72afd74c12d122052af900604a0f079c6f85679d",
+      "targets": [
+        "codex"
+      ],
+      "item": "agent:architect"
+    },
+    {
+      "path": ".forge/harness/agents/build-error-resolver.md",
+      "sha256": "e86333f86815bf4be5d4b1817223577ea87c96ba2a96ae268fb7beeedc61a464",
+      "targets": [
+        "codex"
+      ],
+      "item": "agent:build-error-resolver"
+    },
+    {
+      "path": ".forge/harness/agents/ci-security-reviewer.md",
+      "sha256": "b719fbbe71a48c388fcff219c4377aa7adf982fd9c855d25718ca0870386c508",
+      "targets": [
+        "codex"
+      ],
+      "item": "agent:ci-security-reviewer"
+    },
+    {
+      "path": ".forge/harness/agents/code-reviewer.md",
+      "sha256": "161cbbfd28f853581d12dfc65ebbdba1505a31fa1becf07e422cbc0be36b60a5",
+      "targets": [
+        "codex"
+      ],
+      "item": "agent:code-reviewer"
+    },
+    {
+      "path": ".forge/harness/agents/context-optimizer.md",
+      "sha256": "e037cc1abfacdb4fdd588fdab6e30984aa825861e0a2d09781ef73ccb095a69b",
+      "targets": [
+        "codex"
+      ],
+      "item": "agent:context-optimizer"
+    },
+    {
+      "path": ".forge/harness/agents/database-reviewer.md",
+      "sha256": "88ab9cefa611b5c6394b456d10390dca3c870dc56d3c81a576fc09d56d55b4e9",
+      "targets": [
+        "codex"
+      ],
+      "item": "agent:database-reviewer"
+    },
+    {
+      "path": ".forge/harness/agents/debugger.md",
+      "sha256": "98ff6ba357956eab0254f988cfe1c338bf31ed106f8067457e6d8a41fdc6f3d9",
+      "targets": [
+        "codex"
+      ],
+      "item": "agent:debugger"
+    },
+    {
+      "path": ".forge/harness/agents/dependency-auditor.md",
+      "sha256": "1fd4d2d77f4b6fecde0188d274cc98de71bf00af930dc6d09ffc8e420950ea2a",
+      "targets": [
+        "codex"
+      ],
+      "item": "agent:dependency-auditor"
+    },
+    {
+      "path": ".forge/harness/agents/documentation-writer.md",
+      "sha256": "fc30c54f5449e53a9e57df91cc9d5b022480b73898c13d5b1226ad2c42ae1a58",
+      "targets": [
+        "codex"
+      ],
+      "item": "agent:documentation-writer"
+    },
+    {
+      "path": ".forge/harness/agents/loop-operator.md",
+      "sha256": "481f7ee6f2d66654424f2d2ed725a7de9ae789b6b1438a77015244d6876fe01b",
+      "targets": [
+        "codex"
+      ],
+      "item": "agent:loop-operator"
+    },
+    {
+      "path": ".forge/harness/agents/mcp-builder.md",
+      "sha256": "0850c2167fedb52233dd201afd6f9e7f1aad2e22f2025c6f6448f0fc91bd82e1",
+      "targets": [
+        "codex"
+      ],
+      "item": "agent:mcp-builder"
+    },
+    {
+      "path": ".forge/harness/agents/performance-engineer.md",
+      "sha256": "a43604d3aa9fba231d11999580eeb690925b4a549ebcdd7b90ff33bddd2c8d6d",
+      "targets": [
+        "codex"
+      ],
+      "item": "agent:performance-engineer"
+    },
+    {
+      "path": ".forge/harness/agents/planner.md",
+      "sha256": "2183e20f25454883c6c5b24624feaad309c8cf615dcb27dc36ec40fc77fe7686",
+      "targets": [
+        "codex"
+      ],
+      "item": "agent:planner"
+    },
+    {
+      "path": ".forge/harness/agents/refactor-cleaner.md",
+      "sha256": "aba57f0b6a081ef9ddb2ce8411c551b659355fd9b4d8a78cd59d2b9aeccbb65b",
+      "targets": [
+        "codex"
+      ],
+      "item": "agent:refactor-cleaner"
+    },
+    {
+      "path": ".forge/harness/agents/release-manager.md",
+      "sha256": "0636cb98ed0f8727228d65a0b32fd986bbf103bea0baa574e7727f3f79d986e8",
+      "targets": [
+        "codex"
+      ],
+      "item": "agent:release-manager"
+    },
+    {
+      "path": ".forge/harness/agents/security-reviewer.md",
+      "sha256": "b5f90e570a7962e8d40ba5b5afb7c29ab82960cf616a7a2e8a9171db689df209",
+      "targets": [
+        "codex"
+      ],
+      "item": "agent:security-reviewer"
+    },
+    {
+      "path": ".forge/harness/agents/tdd-guide.md",
+      "sha256": "17832c213388c1bcc1e57f86af9a09ccae2e581fcbb3fc0a91ad60478d872e46",
+      "targets": [
+        "codex"
+      ],
+      "item": "agent:tdd-guide"
+    },
+    {
+      "path": ".forge/harness/commands/api-design.md",
+      "sha256": "9ea42bdba3d756057d3b86cc521a12579ff233d22730e9d8a6c6e0cac74a520d",
+      "targets": [
+        "codex"
+      ],
+      "item": "command:api-design"
+    },
+    {
+      "path": ".forge/harness/commands/build-fix.md",
+      "sha256": "5af28d1d9fe720e07edab3583a936695f7732dff5664cc0bd03e6c4b67286b49",
+      "targets": [
+        "codex"
+      ],
+      "item": "command:build-fix"
+    },
+    {
+      "path": ".forge/harness/commands/checkpoint.md",
+      "sha256": "8989fef780663d517584be3f6b4e4cbfaf9fed5d55d24f12bb2e3722a338caed",
+      "targets": [
+        "codex"
+      ],
+      "item": "command:checkpoint"
+    },
+    {
+      "path": ".forge/harness/commands/code-review.md",
+      "sha256": "36b21242e2f522c839af5da1a10311c8d1fdfe60b752ccae7d9a8662aabb73ba",
+      "targets": [
+        "codex"
+      ],
+      "item": "command:code-review"
+    },
+    {
+      "path": ".forge/harness/commands/consult.md",
+      "sha256": "3db4371f6d5dc4f12ac56283752b96be08401e34d00974d6711e1ec70ecec519",
+      "targets": [
+        "codex"
+      ],
+      "item": "command:consult"
+    },
+    {
+      "path": ".forge/harness/commands/context-budget.md",
+      "sha256": "669a31ce8ecd7dba7190c0bdc495aeb06bcada095ab1a7e199c8dae80ed7fdad",
+      "targets": [
+        "codex"
+      ],
+      "item": "command:context-budget"
+    },
+    {
+      "path": ".forge/harness/commands/cost.md",
+      "sha256": "0cb28504f3edc2906fe21a8cd7ddd66ea7caf386b7b1bd9d895c382a01d22569",
+      "targets": [
+        "codex"
+      ],
+      "item": "command:cost"
+    },
+    {
+      "path": ".forge/harness/commands/deps-audit.md",
+      "sha256": "06b9b35832540b240f1aab027915b4f96081f28798a470b5a18948f8d8c9f5e6",
+      "targets": [
+        "codex"
+      ],
+      "item": "command:deps-audit"
+    },
+    {
+      "path": ".forge/harness/commands/evolve.md",
+      "sha256": "3a225c4184e0d8c545a0ac935bb55061bb7bb8845fce13ca9dd125dc409396da",
+      "targets": [
+        "codex"
+      ],
+      "item": "command:evolve"
+    },
+    {
+      "path": ".forge/harness/commands/explain.md",
+      "sha256": "edfb9a565856acf07a0ef9d70a31ba1f04f2bb2381ac8b9dfab67ea0fcc334f9",
+      "targets": [
+        "codex"
+      ],
+      "item": "command:explain"
+    },
+    {
+      "path": ".forge/harness/commands/guard.md",
+      "sha256": "f73421a5bb5cbd5f89d000bc12d9223f8b738ab6ea1fca6781e9dd03b54544c3",
+      "targets": [
+        "codex"
+      ],
+      "item": "command:guard"
+    },
+    {
+      "path": ".forge/harness/commands/handoff.md",
+      "sha256": "18d47c0373e0b0b7ada0df1c54c1e176cff0fa7ce08a3e6f7bc208cb4d40aeb7",
+      "targets": [
+        "codex"
+      ],
+      "item": "command:handoff"
+    },
+    {
+      "path": ".forge/harness/commands/instincts.md",
+      "sha256": "9822c46243479e70723f0760249edb010b1b5f9413ceeed47e6acda52392a96c",
+      "targets": [
+        "codex"
+      ],
+      "item": "command:instincts"
+    },
+    {
+      "path": ".forge/harness/commands/learn.md",
+      "sha256": "968e06e799b7f177deafdb0fb6f60858592a519d4fcf7c121ac99e94480b1add",
+      "targets": [
+        "codex"
+      ],
+      "item": "command:learn"
+    },
+    {
+      "path": ".forge/harness/commands/loop.md",
+      "sha256": "37ec2f42a4c188a73ce4574413124961810217d66b6f3489d94b0f373ad24d36",
+      "targets": [
+        "codex"
+      ],
+      "item": "command:loop"
+    },
+    {
+      "path": ".forge/harness/commands/mcp-sync.md",
+      "sha256": "81ebae26aee392e906a56a237623acd8d113b7b3f14fff68ec68754bf7ae5548",
+      "targets": [
+        "codex"
+      ],
+      "item": "command:mcp-sync"
+    },
+    {
+      "path": ".forge/harness/commands/plan.md",
+      "sha256": "e083dbeef67146dec2af7a9ced5a78462ba35e7b0051b9c60a39e019bfe1db56",
+      "targets": [
+        "codex"
+      ],
+      "item": "command:plan"
+    },
+    {
+      "path": ".forge/harness/commands/race.md",
+      "sha256": "67da3ad3c01749209414613819c57dd44347482f3087e672a8db2ee5a65e28f5",
+      "targets": [
+        "codex"
+      ],
+      "item": "command:race"
+    },
+    {
+      "path": ".forge/harness/commands/refactor-clean.md",
+      "sha256": "6e1870af054994c85094618b9ad13064c258e8cda493e8b04e31188904198635",
+      "targets": [
+        "codex"
+      ],
+      "item": "command:refactor-clean"
+    },
+    {
+      "path": ".forge/harness/commands/release-check.md",
+      "sha256": "e790b9032fa8664da18c5098ef921b28975b2288b5062266cd3809533ce1f7ac",
+      "targets": [
+        "codex"
+      ],
+      "item": "command:release-check"
+    },
+    {
+      "path": ".forge/harness/commands/review-pr.md",
+      "sha256": "baa12f8abfbb09d500f0d8bec5f5569e5545dcc9109a3dd75782e60aa78440b7",
+      "targets": [
+        "codex"
+      ],
+      "item": "command:review-pr"
+    },
+    {
+      "path": ".forge/harness/commands/scorecard.md",
+      "sha256": "c64fdafad324a8d09a4340713570932e42daee815171b5d470ca3aa775e55fe4",
+      "targets": [
+        "codex"
+      ],
+      "item": "command:scorecard"
+    },
+    {
+      "path": ".forge/harness/commands/security-review.md",
+      "sha256": "2480a20efb6fba7a7f6ceae7fb0fa74f87b502ed275b98c13afb85dd9b64292a",
+      "targets": [
+        "codex"
+      ],
+      "item": "command:security-review"
+    },
+    {
+      "path": ".forge/harness/commands/security-scan.md",
+      "sha256": "24e00da1a72194644b7f4ff6b01c655c47345a88b8ddef0da638a6cc24a11157",
+      "targets": [
+        "codex"
+      ],
+      "item": "command:security-scan"
+    },
+    {
+      "path": ".forge/harness/commands/shield.md",
+      "sha256": "2dbb929c2414e343b0bd6c886cf679fd6daf27fc9abd9f7590187b9a930bd61c",
+      "targets": [
+        "codex"
+      ],
+      "item": "command:shield"
+    },
+    {
+      "path": ".forge/harness/commands/spec.md",
+      "sha256": "ff5198a65e2b0223e27cf4f992a19d11e448286a60a2bc417ba30c83339f84c2",
+      "targets": [
+        "codex"
+      ],
+      "item": "command:spec"
+    },
+    {
+      "path": ".forge/harness/commands/tdd.md",
+      "sha256": "ef4cd4a25ca01bff87df553687c50f41040cfba070ad6619463dcaceb100e6f6",
+      "targets": [
+        "codex"
+      ],
+      "item": "command:tdd"
+    },
+    {
+      "path": ".forge/harness/commands/test-coverage.md",
+      "sha256": "2cecd5235ca30119ae8755315e6f0dc1e507b269176e4a7f5d559996772550c7",
+      "targets": [
+        "codex"
+      ],
+      "item": "command:test-coverage"
+    },
+    {
+      "path": ".forge/harness/commands/update-docs.md",
+      "sha256": "fad2a8e15dee5f92b8239d2ea293f6cc11acd8b4dc19f33bb7c579c8f0b3dc03",
+      "targets": [
+        "codex"
+      ],
+      "item": "command:update-docs"
+    },
+    {
+      "path": ".forge/harness/commands/verify.md",
+      "sha256": "a918a93c8062126d96a5b7d30379a04cdc64679c989ecff482a72890926eb8bd",
+      "targets": [
+        "codex"
+      ],
+      "item": "command:verify"
+    },
+    {
+      "path": ".forge/harness/rules/common/agents.md",
+      "sha256": "5d2f0e0e64826b40e138ad6e3cbe51bc5820ec1ad730b2edf4f621a9c9a2da4e",
+      "targets": [
+        "codex"
+      ],
+      "item": "rule:common/agents"
+    },
+    {
+      "path": ".forge/harness/rules/common/coding-style.md",
+      "sha256": "a0b09d4cdd19d448817fcef499d9c695451bd2e8ed869010a417a0451c4bd859",
+      "targets": [
+        "codex"
+      ],
+      "item": "rule:common/coding-style"
+    },
+    {
+      "path": ".forge/harness/rules/common/documentation.md",
+      "sha256": "23b7ee4091c4e2d8025e86de8512ed05f8605bc605a66a3a5c05b588c6044d04",
+      "targets": [
+        "codex"
+      ],
+      "item": "rule:common/documentation"
+    },
+    {
+      "path": ".forge/harness/rules/common/evidence.md",
+      "sha256": "94d0aa240bfd794695cd9ebb8e2e7a7f87edebc429c7c922e59baaccd2ce0859",
+      "targets": [
+        "codex"
+      ],
+      "item": "rule:common/evidence"
+    },
+    {
+      "path": ".forge/harness/rules/common/git.md",
+      "sha256": "80fc32b00242e1b5aabe090f2b0060898b77ea7d1496963966b81c2b32840ce5",
+      "targets": [
+        "codex"
+      ],
+      "item": "rule:common/git"
+    },
+    {
+      "path": ".forge/harness/rules/common/performance.md",
+      "sha256": "5310cebaef69bfc2aa1d091c2ded0eec68305bc328eadbe3e4a9826675f047a5",
+      "targets": [
+        "codex"
+      ],
+      "item": "rule:common/performance"
+    },
+    {
+      "path": ".forge/harness/rules/common/security.md",
+      "sha256": "5b22a811f125a0a60c43ad4ab420cc6e3fad0072fbbf8128bdeb997156ef6c74",
+      "targets": [
+        "codex"
+      ],
+      "item": "rule:common/security"
+    },
+    {
+      "path": ".forge/harness/rules/common/testing.md",
+      "sha256": "d15621288ce95a8bd189dd0eb16040c40319e1c0c0d37f484b79d2c2a5644efe",
+      "targets": [
+        "codex"
+      ],
+      "item": "rule:common/testing"
+    },
+    {
+      "path": ".forge/harness/rules/react/react-style.md",
+      "sha256": "4853586c8ac994a961c1011baa7228310f1142889a91da9ed4d79f164d05ec6c",
+      "targets": [
+        "codex"
+      ],
+      "item": "rule:react/react-style"
+    },
+    {
+      "path": ".forge/harness/rules/typescript/node-runtime.md",
+      "sha256": "eef41134d407707abcebadd5e63cd0ff6396d820a06b3e16570d4d9641a3953d",
+      "targets": [
+        "codex"
+      ],
+      "item": "rule:typescript/node-runtime"
+    },
+    {
+      "path": ".forge/harness/rules/typescript/typescript-style.md",
+      "sha256": "8113eedb9e2e6f1f28f8ac58b508f4a4175261747cde87188d52f3ce187a3fd0",
+      "targets": [
+        "codex"
+      ],
+      "item": "rule:typescript/typescript-style"
+    },
+    {
+      "path": ".forge/harness/rules/typescript/typescript-testing.md",
+      "sha256": "4a114505718132a95e1e995d7012746c3c70af1d3a95d9a7c7e099f01310ddeb",
+      "targets": [
+        "codex"
+      ],
+      "item": "rule:typescript/typescript-testing"
+    }
+  ],
+  "blocks": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "3211d74f19883c12287d4fe514fae63e8cc6f5594532d89cfe41ae11a170525b",
+      "targets": [
+        "codex"
+      ],
+      "createdFile": true
+    }
+  ]
+}
